@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E332677320CCE4EA00C13ECC /* AppDelegate.m */; };
-		E332677720CCE4EA00C13ECC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E332677620CCE4EA00C13ECC /* ViewController.m */; };
 		E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E332677820CCE4EA00C13ECC /* Main.storyboard */; };
 		E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332677B20CCE4EC00C13ECC /* Assets.xcassets */; };
 		E332677F20CCE4EC00C13ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E332677D20CCE4EC00C13ECC /* LaunchScreen.storyboard */; };
 		E332678220CCE4EC00C13ECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
 		E332678C20CCE4EC00C13ECC /* TriviaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678B20CCE4EC00C13ECC /* TriviaTests.m */; };
 		E332679720CCE4EC00C13ECC /* TriviaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E332679620CCE4EC00C13ECC /* TriviaUITests.m */; };
+		E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA3D20CEFF8D00322B27 /* DBManager.m */; };
+		E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4020CF01AD00322B27 /* StartViewController.m */; };
+		E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4420CF01E800322B27 /* PlayViewController.m */; };
+		E3E4EA4B20CF03FA00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA4A20CF03FA00322B27 /* trivia.db */; };
+		E3E4EA4C20CF03FA00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA4A20CF03FA00322B27 /* trivia.db */; };
+		E3E4EA4D20CF03FA00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA4A20CF03FA00322B27 /* trivia.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +43,6 @@
 		E332676F20CCE4EA00C13ECC /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332677220CCE4EA00C13ECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E332677320CCE4EA00C13ECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E332677520CCE4EA00C13ECC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E332677620CCE4EA00C13ECC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E332677920CCE4EA00C13ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E332677B20CCE4EC00C13ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E332677E20CCE4EC00C13ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,13 @@
 		E332679220CCE4EC00C13ECC /* TriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332679620CCE4EC00C13ECC /* TriviaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriviaUITests.m; sourceTree = "<group>"; };
 		E332679820CCE4EC00C13ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E4EA3C20CEFF8D00322B27 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		E3E4EA3D20CEFF8D00322B27 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		E3E4EA3F20CF01AD00322B27 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		E3E4EA4020CF01AD00322B27 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		E3E4EA4320CF01E800322B27 /* PlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		E3E4EA4420CF01E800322B27 /* PlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		E3E4EA4A20CF03FA00322B27 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 				E332678A20CCE4EC00C13ECC /* TriviaTests */,
 				E332679520CCE4EC00C13ECC /* TriviaUITests */,
 				E332677020CCE4EA00C13ECC /* Products */,
+				E3E4EA4A20CF03FA00322B27 /* trivia.db */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +112,12 @@
 		E332677120CCE4EA00C13ECC /* Trivia */ = {
 			isa = PBXGroup;
 			children = (
+				E332677820CCE4EA00C13ECC /* Main.storyboard */,
 				E332677220CCE4EA00C13ECC /* AppDelegate.h */,
 				E332677320CCE4EA00C13ECC /* AppDelegate.m */,
-				E332677520CCE4EA00C13ECC /* ViewController.h */,
-				E332677620CCE4EA00C13ECC /* ViewController.m */,
-				E332677820CCE4EA00C13ECC /* Main.storyboard */,
+				E3E4EA3C20CEFF8D00322B27 /* DBManager.h */,
+				E3E4EA3D20CEFF8D00322B27 /* DBManager.m */,
+				E3E4EA4220CF01C500322B27 /* Play */,
 				E332677B20CCE4EC00C13ECC /* Assets.xcassets */,
 				E332677D20CCE4EC00C13ECC /* LaunchScreen.storyboard */,
 				E332678020CCE4EC00C13ECC /* Info.plist */,
@@ -130,6 +142,17 @@
 				E332679820CCE4EC00C13ECC /* Info.plist */,
 			);
 			path = TriviaUITests;
+			sourceTree = "<group>";
+		};
+		E3E4EA4220CF01C500322B27 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4EA4320CF01E800322B27 /* PlayViewController.h */,
+				E3E4EA4420CF01E800322B27 /* PlayViewController.m */,
+				E3E4EA3F20CF01AD00322B27 /* StartViewController.h */,
+				E3E4EA4020CF01AD00322B27 /* StartViewController.m */,
+			);
+			path = Play;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E4EA4B20CF03FA00322B27 /* trivia.db in Resources */,
 				E332677F20CCE4EC00C13ECC /* LaunchScreen.storyboard in Resources */,
 				E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */,
 				E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */,
@@ -245,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E4EA4C20CF03FA00322B27 /* trivia.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E4EA4D20CF03FA00322B27 /* trivia.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E332677720CCE4EA00C13ECC /* ViewController.m in Sources */,
 				E332678220CCE4EC00C13ECC /* main.m in Sources */,
+				E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */,
 				E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */,
+				E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */,
+				E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
