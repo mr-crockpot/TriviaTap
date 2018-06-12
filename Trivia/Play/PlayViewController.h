@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "DBManager.h"
+#import "Validate.h"
+
+
+
+
+
 
 
 @interface PlayViewController : UIViewController
@@ -25,10 +31,25 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *outletCollectionBtnAnswers;
 
 @property (strong, nonatomic) IBOutlet UILabel *lblQuestion;
+@property (strong, nonatomic) IBOutlet UILabel *lblResult;
 
 @property NSInteger level;
 
 
 @property BOOL isCorrect;
+
+@property NSTimer *gameTimer;
+@property float startTime;
+@property (strong, nonatomic) IBOutlet UILabel *lblTimer;
+
+@property NSInteger numberRight;
+@property NSInteger numberWrong;
+@property (strong, nonatomic) IBOutlet UILabel *lblRight;
+@property (strong, nonatomic) IBOutlet UILabel *lblWrong;
+@property (strong, nonatomic) IBOutlet UILabel *lblLevel;
+
+@property float highEnd;
+@property float lowEnd;
+
 
 @end

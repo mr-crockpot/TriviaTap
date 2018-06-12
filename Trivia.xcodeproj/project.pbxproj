@@ -162,8 +162,8 @@
 			children = (
 				E3E4EA3D20CEFF8D00322B27 /* DBManager.m */,
 				E3E4EA3C20CEFF8D00322B27 /* DBManager.h */,
-				E3E4EA5B20D04B2200322B27 /* Validate.h */,
 				E3E4EA5C20D04B2200322B27 /* Validate.m */,
+				E3E4EA5B20D04B2200322B27 /* Validate.h */,
 			);
 			path = "Special Classes";
 			sourceTree = "<group>";

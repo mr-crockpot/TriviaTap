@@ -10,8 +10,10 @@
 
 @interface Validate : NSObject
 
-(BOOL)validateEntriesWithLowEnd: (float) lowEnd highEnd:(float)highEnd arrayOfData: (NSMutableArray *)arrData;
-(float)setHighEnd: (NSInteger)level;
-(float)setLowEnd: (NSInteger)level;
++(BOOL)validateEntriesWithLowEnd: (float) lowEnd highEnd:(float)highEnd arrayOfData: (NSMutableArray *)arrData;
+
++(float)setHighEndForLevel: (NSInteger)level;
+
++(float)setLowEndForLevel: (NSInteger)level;
 
 @end
