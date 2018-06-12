@@ -35,13 +35,66 @@
     _arrQuestion = [[NSMutableArray alloc] initWithArray:[_dbManager loadDataFromDB:queryQuestion]];
     
     
-    NSString *queryData = @"SELECT * FROM data";
-    _arrData = [[NSMutableArray alloc]initWithArray:[_dbManager loadDataFromDB:queryData]];
+    NSString *queryData = [NSString stringWithFormat:@"SELECT * FROM data WHERE Category = '%@' ORDER BY RANDOM() LIMIT 2",_arrQuestion[0][0]];
+  
+    //the bigger the criteria (both high and low end), the easier the question.
+    do {
+        _arrData = [[NSMutableArray alloc]initWithArray:[_dbManager loadDataFromDB:queryData]];
+    }
+    while (![self validateEntriesWithLowEnd:[self setLowEnd] highEnd:[self setHighEnd]]);
     
-    NSLog(@"The array has %li elements",_arrData.count);
-    NSLog(@"The topic is %@ and the question is %@",_arrQuestion[0][0],_arrQuestion[0][1]);
+    _lblQuestion.text = _arrQuestion[0][1];
+    [_btnAnswer1 setTitle:_arrData[0][1] forState:UIControlStateNormal];
+    [_btnAnswer2 setTitle:_arrData[1][1] forState:UIControlStateNormal];
     
     
 }
 
+-(BOOL)validateEntriesWithLowEnd: (float) lowEnd highEnd:(float)highEnd{
+    float answer1 = [_arrData[0][2] floatValue ];
+    float answer2 = [_arrData[1][2] floatValue ];
+    float absValDiff = ABS(answer1/answer2 -1);
+    
+    if (absValDiff<highEnd && absValDiff>lowEnd) {
+        return TRUE;
+        //TRUE means proceed.
+        
+    }
+    else{
+        return FALSE;
+        //FALSE means keep finding questions
+    }
+    
+    
+}
+
+-(float)setHighEnd{
+    return 5;
+}
+
+-(float)setLowEnd {
+    return 1;
+    
+}
+
+- (IBAction)btnAnswerPressed:(UIButton *)sender {
+   
+    NSInteger otherTag;
+    if (sender.tag == 0) {
+        otherTag = 1;
+    }
+    else {
+        otherTag = 0;
+    }
+  
+    if ([_arrData[sender.tag][2] integerValue]> [_arrData[otherTag][2]integerValue]) {
+        _isCorrect = YES;
+        _lblQuestion.text = @"Correct";
+    }
+    else {
+        _isCorrect = NO;
+        _lblQuestion.text = @"Wrong";
+    }
+    
+}
 @end

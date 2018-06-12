@@ -17,9 +17,10 @@
 		E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA3D20CEFF8D00322B27 /* DBManager.m */; };
 		E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4020CF01AD00322B27 /* StartViewController.m */; };
 		E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4420CF01E800322B27 /* PlayViewController.m */; };
-		E3E4EA4B20CF03FA00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA4A20CF03FA00322B27 /* trivia.db */; };
-		E3E4EA4C20CF03FA00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA4A20CF03FA00322B27 /* trivia.db */; };
-		E3E4EA4D20CF03FA00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA4A20CF03FA00322B27 /* trivia.db */; };
+		E3E4EA5720D0499E00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA5620D0499E00322B27 /* trivia.db */; };
+		E3E4EA5820D0499E00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA5620D0499E00322B27 /* trivia.db */; };
+		E3E4EA5920D0499E00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA5620D0499E00322B27 /* trivia.db */; };
+		E3E4EA5D20D04B2200322B27 /* Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA5C20D04B2200322B27 /* Validate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,9 @@
 		E3E4EA4020CF01AD00322B27 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		E3E4EA4320CF01E800322B27 /* PlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		E3E4EA4420CF01E800322B27 /* PlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-		E3E4EA4A20CF03FA00322B27 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
+		E3E4EA5620D0499E00322B27 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
+		E3E4EA5B20D04B2200322B27 /* Validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Validate.h; sourceTree = "<group>"; };
+		E3E4EA5C20D04B2200322B27 /* Validate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Validate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +98,7 @@
 				E332678A20CCE4EC00C13ECC /* TriviaTests */,
 				E332679520CCE4EC00C13ECC /* TriviaUITests */,
 				E332677020CCE4EA00C13ECC /* Products */,
-				E3E4EA4A20CF03FA00322B27 /* trivia.db */,
+				E3E4EA5620D0499E00322B27 /* trivia.db */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,8 +118,7 @@
 				E332677820CCE4EA00C13ECC /* Main.storyboard */,
 				E332677220CCE4EA00C13ECC /* AppDelegate.h */,
 				E332677320CCE4EA00C13ECC /* AppDelegate.m */,
-				E3E4EA3C20CEFF8D00322B27 /* DBManager.h */,
-				E3E4EA3D20CEFF8D00322B27 /* DBManager.m */,
+				E3E4EA5A20D04A1C00322B27 /* Special Classes */,
 				E3E4EA4220CF01C500322B27 /* Play */,
 				E332677B20CCE4EC00C13ECC /* Assets.xcassets */,
 				E332677D20CCE4EC00C13ECC /* LaunchScreen.storyboard */,
@@ -153,6 +155,17 @@
 				E3E4EA4020CF01AD00322B27 /* StartViewController.m */,
 			);
 			path = Play;
+			sourceTree = "<group>";
+		};
+		E3E4EA5A20D04A1C00322B27 /* Special Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4EA3D20CEFF8D00322B27 /* DBManager.m */,
+				E3E4EA3C20CEFF8D00322B27 /* DBManager.h */,
+				E3E4EA5B20D04B2200322B27 /* Validate.h */,
+				E3E4EA5C20D04B2200322B27 /* Validate.m */,
+			);
+			path = "Special Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E4EA4B20CF03FA00322B27 /* trivia.db in Resources */,
+				E3E4EA5720D0499E00322B27 /* trivia.db in Resources */,
 				E332677F20CCE4EC00C13ECC /* LaunchScreen.storyboard in Resources */,
 				E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */,
 				E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */,
@@ -269,7 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E4EA4C20CF03FA00322B27 /* trivia.db in Resources */,
+				E3E4EA5820D0499E00322B27 /* trivia.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E4EA4D20CF03FA00322B27 /* trivia.db in Resources */,
+				E3E4EA5920D0499E00322B27 /* trivia.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +304,7 @@
 				E332678220CCE4EC00C13ECC /* main.m in Sources */,
 				E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */,
 				E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */,
+				E3E4EA5D20D04B2200322B27 /* Validate.m in Sources */,
 				E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */,
 				E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */,
 			);
