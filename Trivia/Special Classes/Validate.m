@@ -13,13 +13,13 @@
 
 +(BOOL)validateEntriesWithLowEnd: (float) lowEnd highEnd:(float)highEnd arrayOfData: (NSMutableArray *)arrData{
     
+        
+    float answer1Rank = [arrData[0][3] floatValue ];
+    float answer2Rank = [arrData[1][3] floatValue ];
+    float rankDiff = ABS(answer1Rank-answer2Rank);
     
-    float answer1 = [arrData[0][2] floatValue ];
-    float answer2 = [arrData[1][2] floatValue ];
-    float absValDiff = ABS(answer1/answer2 -1);
-    
-    if (absValDiff<highEnd && absValDiff>lowEnd) {
-        NSLog(@"The abs diff is %f",absValDiff);
+    if (rankDiff<highEnd && rankDiff>lowEnd) {
+       
         return TRUE;
         
         //TRUE means proceed.

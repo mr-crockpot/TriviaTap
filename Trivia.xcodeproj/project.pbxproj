@@ -17,10 +17,37 @@
 		E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA3D20CEFF8D00322B27 /* DBManager.m */; };
 		E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4020CF01AD00322B27 /* StartViewController.m */; };
 		E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4420CF01E800322B27 /* PlayViewController.m */; };
-		E3E4EA5720D0499E00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA5620D0499E00322B27 /* trivia.db */; };
-		E3E4EA5820D0499E00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA5620D0499E00322B27 /* trivia.db */; };
-		E3E4EA5920D0499E00322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA5620D0499E00322B27 /* trivia.db */; };
 		E3E4EA5D20D04B2200322B27 /* Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA5C20D04B2200322B27 /* Validate.m */; };
+		E3E4EA6620D1D82700322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6520D1D82600322B27 /* trivia.db */; };
+		E3E4EA6720D1D82700322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6520D1D82600322B27 /* trivia.db */; };
+		E3E4EA6820D1D82700322B27 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6520D1D82600322B27 /* trivia.db */; };
+		E3E4EA6A20D5DA1100322B27 /* SteelCircular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */; };
+		E3E4EA6B20D5DA1100322B27 /* SteelCircular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */; };
+		E3E4EA6C20D5DA1100322B27 /* SteelCircular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */; };
+		E3E4EA6E20D5FA1A00322B27 /* metalGrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */; };
+		E3E4EA6F20D5FA1A00322B27 /* metalGrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */; };
+		E3E4EA7020D5FA1A00322B27 /* metalGrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */; };
+		E3E4EA7220D5FA4800322B27 /* blackStone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7120D5FA4800322B27 /* blackStone.jpg */; };
+		E3E4EA7320D5FA4800322B27 /* blackStone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7120D5FA4800322B27 /* blackStone.jpg */; };
+		E3E4EA7420D5FA4800322B27 /* blackStone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7120D5FA4800322B27 /* blackStone.jpg */; };
+		E3E4EA7620D60FB400322B27 /* parquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7520D60FB300322B27 /* parquet.jpg */; };
+		E3E4EA7720D60FB400322B27 /* parquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7520D60FB300322B27 /* parquet.jpg */; };
+		E3E4EA7820D60FB400322B27 /* parquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7520D60FB300322B27 /* parquet.jpg */; };
+		E3E4EA7A20D60FC700322B27 /* darkWood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7920D60FC600322B27 /* darkWood.jpg */; };
+		E3E4EA7B20D60FC700322B27 /* darkWood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7920D60FC600322B27 /* darkWood.jpg */; };
+		E3E4EA7C20D60FC700322B27 /* darkWood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7920D60FC600322B27 /* darkWood.jpg */; };
+		E3E4EA7E20D60FDB00322B27 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7D20D60FDA00322B27 /* wood.jpg */; };
+		E3E4EA7F20D60FDB00322B27 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7D20D60FDA00322B27 /* wood.jpg */; };
+		E3E4EA8020D60FDB00322B27 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA7D20D60FDA00322B27 /* wood.jpg */; };
+		E3E4EA8220D6109300322B27 /* concrete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8120D6109300322B27 /* concrete.jpg */; };
+		E3E4EA8320D6109300322B27 /* concrete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8120D6109300322B27 /* concrete.jpg */; };
+		E3E4EA8420D6109300322B27 /* concrete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8120D6109300322B27 /* concrete.jpg */; };
+		E3E4EA8A20D6C22A00322B27 /* metalRidges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8920D6C22900322B27 /* metalRidges.jpg */; };
+		E3E4EA8B20D6C22A00322B27 /* metalRidges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8920D6C22900322B27 /* metalRidges.jpg */; };
+		E3E4EA8C20D6C22A00322B27 /* metalRidges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8920D6C22900322B27 /* metalRidges.jpg */; };
+		E3E4EA8E20D6C25600322B27 /* bronze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8D20D6C25600322B27 /* bronze.jpg */; };
+		E3E4EA8F20D6C25600322B27 /* bronze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8D20D6C25600322B27 /* bronze.jpg */; };
+		E3E4EA9020D6C25600322B27 /* bronze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8D20D6C25600322B27 /* bronze.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +88,18 @@
 		E3E4EA4020CF01AD00322B27 /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		E3E4EA4320CF01E800322B27 /* PlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		E3E4EA4420CF01E800322B27 /* PlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
-		E3E4EA5620D0499E00322B27 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
 		E3E4EA5B20D04B2200322B27 /* Validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Validate.h; sourceTree = "<group>"; };
 		E3E4EA5C20D04B2200322B27 /* Validate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Validate.m; sourceTree = "<group>"; };
+		E3E4EA6520D1D82600322B27 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
+		E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SteelCircular.jpg; sourceTree = "<group>"; };
+		E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metalGrid.jpg; sourceTree = "<group>"; };
+		E3E4EA7120D5FA4800322B27 /* blackStone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackStone.jpg; sourceTree = "<group>"; };
+		E3E4EA7520D60FB300322B27 /* parquet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parquet.jpg; sourceTree = "<group>"; };
+		E3E4EA7920D60FC600322B27 /* darkWood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkWood.jpg; sourceTree = "<group>"; };
+		E3E4EA7D20D60FDA00322B27 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
+		E3E4EA8120D6109300322B27 /* concrete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concrete.jpg; sourceTree = "<group>"; };
+		E3E4EA8920D6C22900322B27 /* metalRidges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = metalRidges.jpg; path = ../../../../Downloads/metalRidges.jpg; sourceTree = "<group>"; };
+		E3E4EA8D20D6C25600322B27 /* bronze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bronze.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +134,16 @@
 				E332678A20CCE4EC00C13ECC /* TriviaTests */,
 				E332679520CCE4EC00C13ECC /* TriviaUITests */,
 				E332677020CCE4EA00C13ECC /* Products */,
-				E3E4EA5620D0499E00322B27 /* trivia.db */,
+				E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */,
+				E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */,
+				E3E4EA7120D5FA4800322B27 /* blackStone.jpg */,
+				E3E4EA7520D60FB300322B27 /* parquet.jpg */,
+				E3E4EA7920D60FC600322B27 /* darkWood.jpg */,
+				E3E4EA8120D6109300322B27 /* concrete.jpg */,
+				E3E4EA7D20D60FDA00322B27 /* wood.jpg */,
+				E3E4EA8D20D6C25600322B27 /* bronze.jpg */,
+				E3E4EA8920D6C22900322B27 /* metalRidges.jpg */,
+				E3E4EA6520D1D82600322B27 /* trivia.db */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,10 +316,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E4EA5720D0499E00322B27 /* trivia.db in Resources */,
+				E3E4EA6620D1D82700322B27 /* trivia.db in Resources */,
 				E332677F20CCE4EC00C13ECC /* LaunchScreen.storyboard in Resources */,
+				E3E4EA6A20D5DA1100322B27 /* SteelCircular.jpg in Resources */,
+				E3E4EA6E20D5FA1A00322B27 /* metalGrid.jpg in Resources */,
+				E3E4EA7620D60FB400322B27 /* parquet.jpg in Resources */,
+				E3E4EA7220D5FA4800322B27 /* blackStone.jpg in Resources */,
+				E3E4EA7E20D60FDB00322B27 /* wood.jpg in Resources */,
+				E3E4EA8220D6109300322B27 /* concrete.jpg in Resources */,
 				E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */,
+				E3E4EA7A20D60FC700322B27 /* darkWood.jpg in Resources */,
 				E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */,
+				E3E4EA8A20D6C22A00322B27 /* metalRidges.jpg in Resources */,
+				E3E4EA8E20D6C25600322B27 /* bronze.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +336,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E4EA5820D0499E00322B27 /* trivia.db in Resources */,
+				E3E4EA6F20D5FA1A00322B27 /* metalGrid.jpg in Resources */,
+				E3E4EA6B20D5DA1100322B27 /* SteelCircular.jpg in Resources */,
+				E3E4EA8B20D6C22A00322B27 /* metalRidges.jpg in Resources */,
+				E3E4EA6720D1D82700322B27 /* trivia.db in Resources */,
+				E3E4EA7320D5FA4800322B27 /* blackStone.jpg in Resources */,
+				E3E4EA7B20D60FC700322B27 /* darkWood.jpg in Resources */,
+				E3E4EA8F20D6C25600322B27 /* bronze.jpg in Resources */,
+				E3E4EA7720D60FB400322B27 /* parquet.jpg in Resources */,
+				E3E4EA8320D6109300322B27 /* concrete.jpg in Resources */,
+				E3E4EA7F20D60FDB00322B27 /* wood.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +353,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E4EA5920D0499E00322B27 /* trivia.db in Resources */,
+				E3E4EA7020D5FA1A00322B27 /* metalGrid.jpg in Resources */,
+				E3E4EA6C20D5DA1100322B27 /* SteelCircular.jpg in Resources */,
+				E3E4EA8C20D6C22A00322B27 /* metalRidges.jpg in Resources */,
+				E3E4EA6820D1D82700322B27 /* trivia.db in Resources */,
+				E3E4EA7420D5FA4800322B27 /* blackStone.jpg in Resources */,
+				E3E4EA7C20D60FC700322B27 /* darkWood.jpg in Resources */,
+				E3E4EA9020D6C25600322B27 /* bronze.jpg in Resources */,
+				E3E4EA7820D60FB400322B27 /* parquet.jpg in Resources */,
+				E3E4EA8420D6109300322B27 /* concrete.jpg in Resources */,
+				E3E4EA8020D60FDB00322B27 /* wood.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
