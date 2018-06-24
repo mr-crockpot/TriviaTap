@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed: @"metalRidges.jpg"]];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
     _level = 1;
@@ -24,6 +24,12 @@
     _gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCountDown) userInfo:nil repeats:YES];
     _highEnd = .8;
     _lowEnd = .2f;
+    
+    //TITLE LABEL
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.text = @"Level Here";
+    self.navigationItem.titleView = titleLabel;
+    [titleLabel sizeToFit];
     
     //FORMAT TIMER LABEL
     _lblTimer.font = [UIFont fontWithName:@"Courier" size:24];
@@ -35,11 +41,11 @@
     
     //FORMAT QUESTION LABEL
     
-    _lblQuestion.font = [UIFont fontWithName:@"Courier" size:24];
+    _lblQuestion.font = [UIFont fontWithName:@"Courier" size:48];
     _lblQuestion.textColor = [UIColor redColor];
     _lblQuestion.layer.borderColor = [[UIColor blueColor] CGColor];
     _lblQuestion.layer.borderWidth = 2;
-    _lblQuestion.backgroundColor = [UIColor yellowColor];
+    _lblQuestion.backgroundColor = [UIColor whiteColor];
     _lblQuestion.textAlignment = NSTextAlignmentCenter;
     
     //FORMAT LIGHTS
@@ -55,14 +61,27 @@
     //FORMAT ANSWER BUTTONS
     
     for (UIButton *btnAnswers in _outletCollectionBtnAnswers) {
-        [btnAnswers setBackgroundImage:[UIImage imageNamed:@"bronze.jpg"] forState:UIControlStateNormal];
-       
+        [btnAnswers setBackgroundColor:[UIColor whiteColor]];
+        btnAnswers.layer.borderColor = [[UIColor blackColor] CGColor];
+        btnAnswers.layer.borderWidth = 3;
+        btnAnswers.titleLabel.numberOfLines = 0;
+        if (btnAnswers.tag == 0) {
+            btnAnswers.backgroundColor = [UIColor yellowColor];
+            
+        }
+        else {
+            btnAnswers.backgroundColor = [UIColor cyanColor];
+        }
+        
+        
+        
         
     }
     
     //FORMAT RESULT LABEL
-    _lblResult.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"concrete.jpg"]];
-    _lblResult.font = [UIFont fontWithName:@"Copperplate-Bold" size:30];
+    
+    _lblResult.font = [UIFont fontWithName:@"Helvetica" size:40];
+    
     
     
     
@@ -98,16 +117,16 @@
     _lblQuestion.text = _arrQuestion[0][1];
     
     NSString *question1 = _arrData[0][1];
-
+    NSString *question2 = _arrData[1][1];
     NSDictionary *attributes = @{ NSForegroundColorAttributeName : [UIColor blackColor],
-                             NSFontAttributeName : [UIFont fontWithName:@"Copperplate-Bold" size:24],
+                             NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:36],
                             /* NSTextEffectAttributeName : NSTextEffectLetterpressStyle*/};
  
     NSAttributedString *question1AttStr = [[NSAttributedString alloc] initWithString:question1 attributes:attributes];
-    
+    NSAttributedString *question2AttStr = [[NSAttributedString alloc] initWithString:question2 attributes:attributes];
     
     [_btnAnswer1 setAttributedTitle:question1AttStr forState:UIControlStateNormal];
-    [_btnAnswer2 setTitle:_arrData[1][1] forState:UIControlStateNormal];
+    [_btnAnswer2 setAttributedTitle:question2AttStr forState:UIControlStateNormal];
     
     
 }
