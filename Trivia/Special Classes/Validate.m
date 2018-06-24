@@ -33,6 +33,12 @@
     
 }
 
++(BOOL)validateSpeedQuestionswithLowEnd: (float)lowEnd highEnd:(float)highEnd arrayOfData: (NSMutableArray *)arrData{
+    
+    return TRUE;
+    
+}
+
 +(float)setHighEndForLevel: (NSInteger)level{
     
   /*  switch (level) {

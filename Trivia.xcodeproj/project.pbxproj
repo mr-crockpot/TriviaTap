@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E31F491220DC4E7C0012C4D6 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E31F491120DC4E7C0012C4D6 /* trivia.db */; };
-		E31F491320DC4E7C0012C4D6 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E31F491120DC4E7C0012C4D6 /* trivia.db */; };
-		E31F491420DC4E7C0012C4D6 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E31F491120DC4E7C0012C4D6 /* trivia.db */; };
 		E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E332677320CCE4EA00C13ECC /* AppDelegate.m */; };
 		E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E332677820CCE4EA00C13ECC /* Main.storyboard */; };
 		E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332677B20CCE4EC00C13ECC /* Assets.xcassets */; };
@@ -17,6 +14,9 @@
 		E332678220CCE4EC00C13ECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
 		E332678C20CCE4EC00C13ECC /* TriviaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678B20CCE4EC00C13ECC /* TriviaTests.m */; };
 		E332679720CCE4EC00C13ECC /* TriviaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E332679620CCE4EC00C13ECC /* TriviaUITests.m */; };
+		E341272020E03B630076BE66 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E341271F20E03B630076BE66 /* trivia.db */; };
+		E341272120E03B630076BE66 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E341271F20E03B630076BE66 /* trivia.db */; };
+		E341272220E03B630076BE66 /* trivia.db in Resources */ = {isa = PBXBuildFile; fileRef = E341271F20E03B630076BE66 /* trivia.db */; };
 		E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA3D20CEFF8D00322B27 /* DBManager.m */; };
 		E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4020CF01AD00322B27 /* StartViewController.m */; };
 		E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4420CF01E800322B27 /* PlayViewController.m */; };
@@ -69,7 +69,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E31F491120DC4E7C0012C4D6 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
 		E332676F20CCE4EA00C13ECC /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332677220CCE4EA00C13ECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E332677320CCE4EA00C13ECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		E332679220CCE4EC00C13ECC /* TriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332679620CCE4EC00C13ECC /* TriviaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriviaUITests.m; sourceTree = "<group>"; };
 		E332679820CCE4EC00C13ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E341271F20E03B630076BE66 /* trivia.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trivia.db; sourceTree = "<group>"; };
 		E3E4EA3C20CEFF8D00322B27 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		E3E4EA3D20CEFF8D00322B27 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		E3E4EA3F20CF01AD00322B27 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				E332678A20CCE4EC00C13ECC /* TriviaTests */,
 				E332679520CCE4EC00C13ECC /* TriviaUITests */,
 				E332677020CCE4EA00C13ECC /* Products */,
-				E31F491120DC4E7C0012C4D6 /* trivia.db */,
+				E341271F20E03B630076BE66 /* trivia.db */,
 				E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */,
 				E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */,
 				E3E4EA7120D5FA4800322B27 /* blackStone.jpg */,
@@ -197,10 +197,10 @@
 		E3E4EA4220CF01C500322B27 /* Play */ = {
 			isa = PBXGroup;
 			children = (
-				E3E4EA4320CF01E800322B27 /* PlayViewController.h */,
-				E3E4EA4420CF01E800322B27 /* PlayViewController.m */,
 				E3E4EA3F20CF01AD00322B27 /* StartViewController.h */,
 				E3E4EA4020CF01AD00322B27 /* StartViewController.m */,
+				E3E4EA4320CF01E800322B27 /* PlayViewController.h */,
+				E3E4EA4420CF01E800322B27 /* PlayViewController.m */,
 				E3ED693320DEF01E00E59D78 /* SpeedViewController.h */,
 				E3ED693420DEF01E00E59D78 /* SpeedViewController.m */,
 			);
@@ -330,7 +330,7 @@
 				E3E4EA8220D6109300322B27 /* concrete.jpg in Resources */,
 				E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */,
 				E3E4EA7A20D60FC700322B27 /* darkWood.jpg in Resources */,
-				E31F491220DC4E7C0012C4D6 /* trivia.db in Resources */,
+				E341272020E03B630076BE66 /* trivia.db in Resources */,
 				E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */,
 				E3E4EA8A20D6C22A00322B27 /* metalRidges.jpg in Resources */,
 				E3E4EA8E20D6C25600322B27 /* bronze.jpg in Resources */,
@@ -349,7 +349,7 @@
 				E3E4EA8F20D6C25600322B27 /* bronze.jpg in Resources */,
 				E3E4EA7720D60FB400322B27 /* parquet.jpg in Resources */,
 				E3E4EA8320D6109300322B27 /* concrete.jpg in Resources */,
-				E31F491320DC4E7C0012C4D6 /* trivia.db in Resources */,
+				E341272120E03B630076BE66 /* trivia.db in Resources */,
 				E3E4EA7F20D60FDB00322B27 /* wood.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +366,7 @@
 				E3E4EA9020D6C25600322B27 /* bronze.jpg in Resources */,
 				E3E4EA7820D60FB400322B27 /* parquet.jpg in Resources */,
 				E3E4EA8420D6109300322B27 /* concrete.jpg in Resources */,
-				E31F491420DC4E7C0012C4D6 /* trivia.db in Resources */,
+				E341272220E03B630076BE66 /* trivia.db in Resources */,
 				E3E4EA8020D60FDB00322B27 /* wood.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

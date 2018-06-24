@@ -26,10 +26,7 @@
     _lowEnd = .2f;
     
     //TITLE LABEL
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.text = @"Level Here";
-    self.navigationItem.titleView = titleLabel;
-    [titleLabel sizeToFit];
+    [self setTitleLabelwithLevel:_level];
     
     //FORMAT TIMER LABEL
     _lblTimer.font = [UIFont fontWithName:@"Courier" size:24];
@@ -98,6 +95,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setTitleLabelwithLevel: (NSInteger) level {
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.text = [NSString stringWithFormat:@"Level %li",_level];
+    self.navigationItem.titleView = titleLabel;
+    [titleLabel sizeToFit];
+}
+
 #pragma mark Load Data
 -(void)loadData{
     NSString *queryQuestion = @"SELECT * FROM questions ORDER BY RANDOM() LIMIT 1";
@@ -127,8 +131,9 @@
     
     [_btnAnswer1 setAttributedTitle:question1AttStr forState:UIControlStateNormal];
     [_btnAnswer2 setAttributedTitle:question2AttStr forState:UIControlStateNormal];
+  
     
-    
+  
 }
 
 - (IBAction)btnAnswerPressed:(UIButton *)sender {
@@ -204,7 +209,10 @@
     }
     if (_numberRight == 5) {
         _level = _level + 1;
-        _lblLevel.text = [NSString stringWithFormat:@"Level %li",_level];
+  
+        [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+        
+        [self setTitleLabelwithLevel:_level];
         _numberWrong = 0;
         _numberRight = 0;
         _startTime = 60;

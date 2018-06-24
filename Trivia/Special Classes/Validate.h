@@ -12,6 +12,9 @@
 
 +(BOOL)validateEntriesWithLowEnd: (float) lowEnd highEnd:(float)highEnd arrayOfData: (NSMutableArray *)arrData;
 
++(BOOL)validateSpeedQuestionswithLowEnd: (float)lowEnd highEnd:(float)highEnd arrayOfData: (NSMutableArray *)arrData;
+
+
 +(float)setHighEndForLevel: (NSInteger)level;
 
 +(float)setLowEndForLevel: (NSInteger)level;

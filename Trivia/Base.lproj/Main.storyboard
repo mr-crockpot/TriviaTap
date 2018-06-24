@@ -49,27 +49,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-Dw-VjH">
-                                <rect key="frame" x="0.0" y="378" width="375" height="121"/>
+                                <rect key="frame" x="0.0" y="347.5" width="375" height="129.5"/>
                                 <state key="normal" title="Answer 1"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="QZs-vS-0e0" eventType="touchUpInside" id="EBQ-hW-5Ai"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b66-Fe-ip1">
-                                <rect key="frame" x="0.0" y="506" width="375" height="121"/>
+                                <rect key="frame" x="0.0" y="467.5" width="375" height="129.5"/>
                                 <state key="normal" title="Answer 2"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="QZs-vS-0e0" eventType="touchUpInside" id="Uha-wA-ZDZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhI-R5-VXh">
-                                <rect key="frame" x="140.5" y="73" width="94" height="91"/>
+                                <rect key="frame" x="140.5" y="23" width="94" height="97"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGC-xb-b2h">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="618.5" width="375" height="48.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -90,13 +90,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Right" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXi-yI-ueO">
                                 <rect key="frame" x="48" y="99" width="40" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6m-6j-DbF">
-                                <rect key="frame" x="117" y="593" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -138,7 +131,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN5-Ke-69l">
-                                <rect key="frame" x="0.0" y="135.5" width="375" height="241"/>
+                                <rect key="frame" x="0.0" y="111" width="375" height="259"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -157,14 +150,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB3-we-uAg">
-                                <rect key="frame" x="314" y="637" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Speed"/>
-                                <connections>
-                                    <segue destination="hFR-nB-mAn" kind="show" id="uNM-Aq-se3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -194,7 +179,6 @@
                     <connections>
                         <outlet property="btnAnswer1" destination="MYb-Dw-VjH" id="nLa-xo-IM4"/>
                         <outlet property="btnAnswer2" destination="b66-Fe-ip1" id="Cx0-cW-xYa"/>
-                        <outlet property="lblLevel" destination="S6m-6j-DbF" id="cIk-5W-6hQ"/>
                         <outlet property="lblQuestion" destination="fN5-Ke-69l" id="WTQ-go-Krn"/>
                         <outlet property="lblResult" destination="IGC-xb-b2h" id="5HE-uC-FBY"/>
                         <outlet property="lblRight" destination="FyD-WA-TNQ" id="yMK-O4-6Jm"/>
@@ -212,7 +196,7 @@
                         <outletCollection property="outletCollectionLights" destination="IyC-d9-Wyv" id="0Yk-Y4-Xtg"/>
                         <outletCollection property="outletCollectionLights" destination="zx7-e4-FNn" id="Ywf-c1-sWH"/>
                         <outletCollection property="outletCollectionLights" destination="HQG-Tu-LtJ" id="mqF-w2-6v2"/>
-                        <segue destination="hFR-nB-mAn" kind="show" identifier="seguePlayToSpeed" id="aWS-fQ-LrD"/>
+                        <segue destination="hFR-nB-mAn" kind="presentation" identifier="seguePlayToSpeed" modalTransitionStyle="flipHorizontal" id="aWS-fQ-LrD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZf-mP-F64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -228,7 +212,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY8-aD-Kfv">
-                                <rect key="frame" x="44" y="489" width="46" height="30"/>
+                                <rect key="frame" x="44" y="489" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -236,7 +220,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-Nh-pIl">
-                                <rect key="frame" x="44" y="361" width="46" height="30"/>
+                                <rect key="frame" x="44" y="361" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -244,7 +228,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-Kk-9H8">
-                                <rect key="frame" x="44" y="427" width="46" height="30"/>
+                                <rect key="frame" x="44" y="427" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -252,7 +236,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-vB-Fff">
-                                <rect key="frame" x="44" y="303" width="46" height="30"/>
+                                <rect key="frame" x="44" y="303" width="254" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -287,7 +271,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hr-cw-o4Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hr-cw-o4Y">
                                 <rect key="frame" x="44" y="78" width="304" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -308,6 +292,7 @@
                     </view>
                     <connections>
                         <outlet property="btnSubmit" destination="sxj-dn-rrm" id="Dyl-4n-uro"/>
+                        <outlet property="lblQuestion" destination="0hr-cw-o4Y" id="qiF-9Z-k8W"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="VaT-vB-Fff" id="GbI-8g-HCR"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="FWX-Nh-pIl" id="hfb-og-Tqy"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="wfq-Kk-9H8" id="Z05-kJ-Zp4"/>
@@ -316,6 +301,7 @@
                         <outletCollection property="outletCollectionLabelRank" destination="eHV-2B-yCf" id="JhS-9V-WJp"/>
                         <outletCollection property="outletCollectionLabelRank" destination="MoA-Ab-R6f" id="RVs-1P-OLP"/>
                         <outletCollection property="outletCollectionLabelRank" destination="VVK-Vd-55a" id="nqw-0b-0RL"/>
+                        <segue destination="QZs-vS-0e0" kind="presentation" identifier="segueSpeedToPlay" modalTransitionStyle="flipHorizontal" id="At6-xL-Zrv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH3-2a-Ks9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -342,6 +328,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aWS-fQ-LrD"/>
+        <segue reference="At6-xL-Zrv"/>
     </inferredMetricsTieBreakers>
 </document>
