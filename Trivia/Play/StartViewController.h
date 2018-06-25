@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Buttons.h"
+
 
 @interface StartViewController : UIViewController
 - (IBAction)btnStart:(id)sender;
+@property (strong, nonatomic) IBOutlet Buttons *testButton3;
 
 @end

@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DBManager.h"
 #import "Validate.h"
-
-
-
-
+#import "Buttons.h"
+#import "Labels.h"
 
 
 
@@ -22,15 +20,15 @@
 
 @property (strong, nonatomic) NSMutableArray *arrData;
 @property (strong, nonatomic) NSMutableArray *arrQuestion;
-@property (strong, nonatomic) IBOutlet UIButton *btnAnswer1;
+@property (strong, nonatomic) IBOutlet Buttons *btnAnswer1;
 
 - (IBAction)btnAnswerPressed:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UIButton *btnAnswer2;
+@property (strong, nonatomic) IBOutlet Buttons *btnAnswer2;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *outletCollectionBtnAnswers;
 
-@property (strong, nonatomic) IBOutlet UILabel *lblQuestion;
+@property (strong, nonatomic) IBOutlet Labels *lblQuestion;
 @property (strong, nonatomic) IBOutlet UILabel *lblResult;
 
 @property NSInteger level;
@@ -53,6 +51,7 @@
 
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *outletCollectionLights;
 
+@property (strong, nonatomic) UIBarButtonItem *barBtntimer;
 
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "DBManager.h"
+#import "Buttons.h"
+#import "Labels.h"
 
 
 
@@ -16,9 +18,10 @@
 
 @property (strong, nonatomic) DBManager *dbManager;
 
+@property (strong, nonatomic) IBOutletCollection(Buttons) NSArray *outletCollectionbtnAnswers;
 
 
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *outletCollectionbtnAnswers;
+
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *outletCollectionLabelRank;
 - (IBAction)btnAnswerPressed:(id)sender;
 
@@ -31,7 +34,7 @@
 @property (strong, nonatomic) NSMutableArray *arrAnswers;
 @property (strong, nonatomic) NSMutableArray *arrCheckAnswers;
 
-@property (strong, nonatomic) IBOutlet UILabel *lblQuestion;
+@property (strong, nonatomic) IBOutlet Labels *lblQuestion;
 
 
 @end

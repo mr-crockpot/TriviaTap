@@ -21,6 +21,10 @@
     _labelNumber = 0;
     _btnSubmit.enabled = NO;
     [self loadData];
+    [_lblQuestion formatQuestionLabels];
+    
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -82,37 +86,7 @@
 }
 
 -(void)loadData{
-    /*
-     NSString *queryQuestion = @"SELECT * FROM questions ORDER BY RANDOM() LIMIT 1";
-     _arrQuestion = [[NSMutableArray alloc] initWithArray:[_dbManager loadDataFromDB:queryQuestion]];
-     
-     
-     NSString *queryData = [NSString stringWithFormat:@"SELECT * FROM data WHERE Category = '%@' ORDER BY RANDOM() LIMIT 2",_arrQuestion[0][0]];
-     
-     //the bigger the criteria (both high and low end), the easier the question.
-     do {
-     _arrData = [[NSMutableArray alloc]initWithArray:[_dbManager loadDataFromDB:queryData]];
-     }
-     
-     while (![Validate validateEntriesWithLowEnd:_lowEnd highEnd:_highEnd arrayOfData:_arrData]);
-     
-     
-     _lblQuestion.text = _arrQuestion[0][1];
-     
-     NSString *question1 = _arrData[0][1];
-     NSString *question2 = _arrData[1][1];
-     NSDictionary *attributes = @{ NSForegroundColorAttributeName : [UIColor blackColor],
-     NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:36],};
 
-NSAttributedString *question1AttStr = [[NSAttributedString alloc] initWithString:question1 attributes:attributes];
-NSAttributedString *question2AttStr = [[NSAttributedString alloc] initWithString:question2 attributes:attributes];
-
-[_btnAnswer1 setAttributedTitle:question1AttStr forState:UIControlStateNormal];
-[_btnAnswer2 setAttributedTitle:question2AttStr forState:UIControlStateNormal];
-
-
-     */
-    
     _arrCheckAnswers = [[NSMutableArray alloc] init];
     
     NSString *queryQuestion = @"SELECT * from questions ORDER BY RANDOM () LIMIT 1";
@@ -123,9 +97,13 @@ NSAttributedString *question2AttStr = [[NSAttributedString alloc] initWithString
     NSString *queryData = [NSString stringWithFormat:@"SELECT * FROM data WHERE Category = '%@' ORDER BY RANDOM() LIMIT 4",_arrQuestion[0][0]];
     _arrAnswers = [[NSMutableArray alloc] initWithArray:[_dbManager loadDataFromDB:queryData]];
     
-    for (UIButton *btnAnswer in _outletCollectionbtnAnswers) {
-        [btnAnswer setTitle:_arrAnswers[btnAnswer.tag][1] forState:UIControlStateNormal];
+    for (Buttons *btnAnswer in _outletCollectionbtnAnswers) {
+      
+        [btnAnswer formatButtonWithString:_arrAnswers[btnAnswer.tag][1]];
+        
     }
+    
+   
     
     
     for (int z=0; z<4; z++) {

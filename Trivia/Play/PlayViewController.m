@@ -26,9 +26,12 @@
     _lowEnd = .2f;
     
     //TITLE LABEL
+   
     [self setTitleLabelwithLevel:_level];
     
     //FORMAT TIMER LABEL
+    
+    
     _lblTimer.font = [UIFont fontWithName:@"Courier" size:24];
     _lblTimer.textColor = [UIColor blueColor];
     _lblTimer.layer.borderColor = [[UIColor redColor] CGColor];
@@ -38,19 +41,22 @@
     
     //FORMAT QUESTION LABEL
     
-    _lblQuestion.font = [UIFont fontWithName:@"Courier" size:48];
-    _lblQuestion.textColor = [UIColor redColor];
-    _lblQuestion.layer.borderColor = [[UIColor blueColor] CGColor];
-    _lblQuestion.layer.borderWidth = 2;
-    _lblQuestion.backgroundColor = [UIColor whiteColor];
-    _lblQuestion.textAlignment = NSTextAlignmentCenter;
+    [_lblQuestion formatQuestionLabels];
     
     //FORMAT LIGHTS
     
     for (UILabel *lights in _outletCollectionLights) {
+        float width = self.view.frame.size.width/15;
+        if (lights.tag<5) {
+            lights.frame = CGRectMake(width*lights.tag, 75, width, width);
+        }
+        
+        if (lights.tag>4) {
+            lights.frame = CGRectMake(width*15/3 + width*lights.tag, 75, width, width);
+        }
         lights.text = @"";
         lights.backgroundColor = [UIColor grayColor];
-        lights.layer.cornerRadius = lights.frame.size.height/2;
+        lights.layer.cornerRadius = width/2;
         lights.layer.masksToBounds = YES;
         
     }
@@ -79,10 +85,6 @@
     
     _lblResult.font = [UIFont fontWithName:@"Helvetica" size:40];
     
-    
-    
-    
-    
     [self loadData];
     
    
@@ -99,6 +101,8 @@
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = [NSString stringWithFormat:@"Level %li",_level];
     self.navigationItem.titleView = titleLabel;
+    _barBtntimer = [[UIBarButtonItem alloc] initWithTitle:@"Timer" style:UIBarButtonItemStyleDone target:nil action:nil];
+    self.navigationItem.rightBarButtonItem = _barBtntimer;
     [titleLabel sizeToFit];
 }
 
@@ -120,18 +124,24 @@
     
     _lblQuestion.text = _arrQuestion[0][1];
     
+    
     NSString *question1 = _arrData[0][1];
     NSString *question2 = _arrData[1][1];
-    NSDictionary *attributes = @{ NSForegroundColorAttributeName : [UIColor blackColor],
+    
+    [_btnAnswer1 formatButtonWithString:question1];
+    [_btnAnswer2 formatButtonWithString:question2];
+    
+        
+  /*  NSDictionary *attributes = @{ NSForegroundColorAttributeName : [UIColor blackColor],
                              NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:36],
-                            /* NSTextEffectAttributeName : NSTextEffectLetterpressStyle*/};
+                            };
  
-    NSAttributedString *question1AttStr = [[NSAttributedString alloc] initWithString:question1 attributes:attributes];
-    NSAttributedString *question2AttStr = [[NSAttributedString alloc] initWithString:question2 attributes:attributes];
+   // NSAttributedString *question1AttStr = [[NSAttributedString alloc] initWithString:question1 attributes:attributes];
+   // NSAttributedString *question2AttStr = [[NSAttributedString alloc] initWithString:question2 attributes:attributes];
     
     [_btnAnswer1 setAttributedTitle:question1AttStr forState:UIControlStateNormal];
     [_btnAnswer2 setAttributedTitle:question2AttStr forState:UIControlStateNormal];
-  
+  */
     
   
 }
@@ -246,6 +256,7 @@
         _lblTimer.text = @"Over";
     }
     else {
+    _barBtntimer.title = [NSString stringWithFormat:@"%.01f",_startTime];
     _lblTimer.text = [NSString stringWithFormat:@"%.01f",_startTime];
     }
 }
