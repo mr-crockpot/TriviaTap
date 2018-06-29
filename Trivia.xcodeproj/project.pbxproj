@@ -25,7 +25,7 @@
 		E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98120E5D5C10011A9D8 /* flipRightSegue.m */; };
 		E38FB98520E5D63C0011A9D8 /* curlUpSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98420E5D63C0011A9D8 /* curlUpSegue.m */; };
 		E38FB98820E5D69B0011A9D8 /* expandSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98720E5D69B0011A9D8 /* expandSegue.m */; };
-		E38FB98B20E6987F0011A9D8 /* segueSlideRight.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98A20E6987F0011A9D8 /* segueSlideRight.m */; };
+		E38FB98E20E6CEEA0011A9D8 /* slideRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98D20E6CEEA0011A9D8 /* slideRightSegue.m */; };
 		E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA3D20CEFF8D00322B27 /* DBManager.m */; };
 		E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4020CF01AD00322B27 /* StartViewController.m */; };
 		E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4420CF01E800322B27 /* PlayViewController.m */; };
@@ -105,8 +105,8 @@
 		E38FB98420E5D63C0011A9D8 /* curlUpSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = curlUpSegue.m; sourceTree = "<group>"; };
 		E38FB98620E5D69B0011A9D8 /* expandSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = expandSegue.h; sourceTree = "<group>"; };
 		E38FB98720E5D69B0011A9D8 /* expandSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = expandSegue.m; sourceTree = "<group>"; };
-		E38FB98920E6987F0011A9D8 /* segueSlideRight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = segueSlideRight.h; sourceTree = "<group>"; };
-		E38FB98A20E6987F0011A9D8 /* segueSlideRight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = segueSlideRight.m; sourceTree = "<group>"; };
+		E38FB98C20E6CEEA0011A9D8 /* slideRightSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slideRightSegue.h; sourceTree = "<group>"; };
+		E38FB98D20E6CEEA0011A9D8 /* slideRightSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = slideRightSegue.m; sourceTree = "<group>"; };
 		E3E4EA3C20CEFF8D00322B27 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		E3E4EA3D20CEFF8D00322B27 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		E3E4EA3F20CF01AD00322B27 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 		E38FB97C20E5A0030011A9D8 /* Segues */ = {
 			isa = PBXGroup;
 			children = (
-				E38FB98920E6987F0011A9D8 /* segueSlideRight.h */,
-				E38FB98A20E6987F0011A9D8 /* segueSlideRight.m */,
+				E38FB98C20E6CEEA0011A9D8 /* slideRightSegue.h */,
+				E38FB98D20E6CEEA0011A9D8 /* slideRightSegue.m */,
 				E38FB97D20E5D57C0011A9D8 /* flipLeftSegue.h */,
 				E38FB97E20E5D57C0011A9D8 /* flipLeftSegue.m */,
 				E38FB98020E5D5C10011A9D8 /* flipRightSegue.h */,
@@ -423,7 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E38FB98B20E6987F0011A9D8 /* segueSlideRight.m in Sources */,
+				E38FB98E20E6CEEA0011A9D8 /* slideRightSegue.m in Sources */,
 				E332678220CCE4EC00C13ECC /* main.m in Sources */,
 				E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */,
 				E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */,

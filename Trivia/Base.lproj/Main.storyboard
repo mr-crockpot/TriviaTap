@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="Xlm-it-ssu"/>
                     <connections>
                         <outlet property="testButton3" destination="iIT-ym-M0j" id="O83-tJ-k2X"/>
-                        <segue destination="Wpn-ay-ctE" kind="custom" identifier="segueStartToPlay" customClass="flipRightSegue" id="ICU-8t-Hkm"/>
+                        <segue destination="Wpn-ay-ctE" kind="custom" identifier="segueStartToPlay" customClass="slideRightSegue" id="ICU-8t-Hkm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -316,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH3-2a-Ks9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4829.6000000000004" y="-4.0479760119940034"/>
+            <point key="canvasLocation" x="4335" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tdn-fo-Nd3">
@@ -374,7 +374,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aWS-fQ-LrD"/>
         <segue reference="At6-xL-Zrv"/>
     </inferredMetricsTieBreakers>
 </document>

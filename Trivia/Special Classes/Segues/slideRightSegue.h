@@ -1,5 +1,5 @@
 //
-//  segueSlideRight.h
+//  slideRightSegue.h
 //  Trivia
 //
 //  Created by Adam Schor on 6/29/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface segueSlideRight : UIStoryboardSegue
+@interface slideRightSegue : UIStoryboardSegue
 
 @end
