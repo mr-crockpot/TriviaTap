@@ -7,6 +7,7 @@
 //
 
 #import "PlayViewController.h"
+#import "SpeedViewController.h"
 
 @interface PlayViewController ()
 
@@ -17,9 +18,9 @@
 - (void)viewDidLoad {
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
+   
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
-    _level = 1;
+    _lblPoints.text = [NSString stringWithFormat:@"%li",_points];
     _startTime = 60;
     _gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCountDown) userInfo:nil repeats:YES];
     _highEnd = .8;
@@ -29,16 +30,18 @@
    
     [self setTitleLabelwithLevel:_level];
     
-    //FORMAT TIMER LABEL
+    //FORMAT TIMER BAR BUTTON
     
+    _barBtntimer.tintColor = [UIColor blueColor];
     
+    /*
     _lblTimer.font = [UIFont fontWithName:@"Courier" size:24];
     _lblTimer.textColor = [UIColor blueColor];
     _lblTimer.layer.borderColor = [[UIColor redColor] CGColor];
     _lblTimer.layer.borderWidth = 2;
     _lblTimer.backgroundColor = [UIColor cyanColor];
     _lblTimer.textAlignment = NSTextAlignmentCenter;
-    
+    */
     //FORMAT QUESTION LABEL
     
     [_lblQuestion formatQuestionLabels];
@@ -91,6 +94,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+-(void)viewDidAppear:(BOOL)animated {
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -98,12 +104,16 @@
 }
 
 -(void)setTitleLabelwithLevel: (NSInteger) level {
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.text = [NSString stringWithFormat:@"Level %li",_level];
-    self.navigationItem.titleView = titleLabel;
-    _barBtntimer = [[UIBarButtonItem alloc] initWithTitle:@"Timer" style:UIBarButtonItemStyleDone target:nil action:nil];
+    _titleLabel = [[UILabel alloc] init];
+    _titleLabel.text = [NSString stringWithFormat:@"Level %li",_level];
+    self.navigationItem.titleView = _titleLabel;
+    
+   
+     _barBtntimer = [[UIBarButtonItem alloc] initWithTitle:@"Timer" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.rightBarButtonItem = _barBtntimer;
-    [titleLabel sizeToFit];
+   _barBtntimer.tintColor = [UIColor blueColor];
+ 
+    [_titleLabel sizeToFit];
 }
 
 #pragma mark Load Data
@@ -132,16 +142,7 @@
     [_btnAnswer2 formatButtonWithString:question2];
     
         
-  /*  NSDictionary *attributes = @{ NSForegroundColorAttributeName : [UIColor blackColor],
-                             NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:36],
-                            };
  
-   // NSAttributedString *question1AttStr = [[NSAttributedString alloc] initWithString:question1 attributes:attributes];
-   // NSAttributedString *question2AttStr = [[NSAttributedString alloc] initWithString:question2 attributes:attributes];
-    
-    [_btnAnswer1 setAttributedTitle:question1AttStr forState:UIControlStateNormal];
-    [_btnAnswer2 setAttributedTitle:question2AttStr forState:UIControlStateNormal];
-  */
     
   
 }
@@ -193,6 +194,9 @@
         case 1:
             result = @"Right";
             alertColor = [UIColor greenColor];
+            _points = _points + 10*(_level+1);
+            _lblPoints.text = [NSString stringWithFormat:@"%li",_points];
+            
             break;
         default:
             break;
@@ -218,11 +222,11 @@
         
     }
     if (_numberRight == 5) {
-        _level = _level + 1;
+        //_level = _level + 1;
   
         [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
         
-        [self setTitleLabelwithLevel:_level];
+        //[self setTitleLabelwithLevel:_level];
         _numberWrong = 0;
         _numberRight = 0;
         _startTime = 60;
@@ -248,16 +252,45 @@
 }
 
 -(void)timerCountDown {
-    
+   
     _startTime = _startTime - .1;
+    
+    if (_startTime<10) {
+         self.navigationController.navigationBar.backgroundColor = [UIColor yellowColor];
+        _barBtntimer.tintColor = [UIColor redColor];
+       
+        _levelFlash = !_levelFlash;
+        if (_levelFlash) {
+            _titleLabel.textColor = [UIColor clearColor];
+        }
+        else {
+            _titleLabel.textColor = [UIColor redColor];
+        }
+    }
     
     if (_startTime<0.001) {
         [_gameTimer invalidate];
-        _lblTimer.text = @"Over";
+        [_barBtntimer setTitle:@"Over"];
+        [_barBtntimer setTintColor:[UIColor blueColor]];
+        _titleLabel.textColor = [UIColor blueColor];
+       self.navigationController.navigationBar.backgroundColor = [UIColor redColor];
+       
+        
     }
     else {
     _barBtntimer.title = [NSString stringWithFormat:@"%.01f",_startTime];
-    _lblTimer.text = [NSString stringWithFormat:@"%.01f",_startTime];
+  
+      
     }
+  
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"seguePlayToSpeed"]) {
+   
+        SpeedViewController *speedViewController = [(UINavigationController *)segue.destinationViewController topViewController];
+        speedViewController.incomingLevel = _level;
+        speedViewController.points = _points;
+    }
+    }
 @end

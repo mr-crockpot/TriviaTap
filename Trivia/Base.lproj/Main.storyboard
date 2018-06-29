@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="Xlm-it-ssu"/>
                     <connections>
                         <outlet property="testButton3" destination="iIT-ym-M0j" id="O83-tJ-k2X"/>
-                        <segue destination="Wpn-ay-ctE" kind="custom" identifier="segueStartToPlay" customClass="customSegue" id="ICU-8t-Hkm"/>
+                        <segue destination="Wpn-ay-ctE" kind="custom" identifier="segueStartToPlay" customClass="flipRightSegue" id="ICU-8t-Hkm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,12 +68,6 @@
                                     <action selector="btnAnswerPressed:" destination="QZs-vS-0e0" eventType="touchUpInside" id="Uha-wA-ZDZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhI-R5-VXh">
-                                <rect key="frame" x="140.5" y="64" width="94" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGC-xb-b2h">
                                 <rect key="frame" x="0.0" y="622" width="375" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -156,26 +150,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr0-y8-KYL">
+                                <rect key="frame" x="140.5" y="63.5" width="94" height="60.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="b66-Fe-ip1" firstAttribute="centerX" secondItem="HPk-o2-1xj" secondAttribute="centerX" id="1sX-Db-uAr"/>
                             <constraint firstItem="fN5-Ke-69l" firstAttribute="centerX" secondItem="HPk-o2-1xj" secondAttribute="centerX" id="DcX-yA-eTZ"/>
-                            <constraint firstItem="bhI-R5-VXh" firstAttribute="centerX" secondItem="HPk-o2-1xj" secondAttribute="centerX" id="EUQ-1s-zRR"/>
                             <constraint firstItem="MYb-Dw-VjH" firstAttribute="centerX" secondItem="HPk-o2-1xj" secondAttribute="centerX" id="FQ7-B2-qj7"/>
                             <constraint firstItem="MYb-Dw-VjH" firstAttribute="height" secondItem="HPk-o2-1xj" secondAttribute="height" multiplier="0.2" id="Ipn-dt-w80"/>
                             <constraint firstItem="IGC-xb-b2h" firstAttribute="width" secondItem="HPk-o2-1xj" secondAttribute="width" id="KHB-Ht-Zsz"/>
                             <constraint firstItem="b66-Fe-ip1" firstAttribute="width" secondItem="MYb-Dw-VjH" secondAttribute="width" id="Upe-Lz-RKy"/>
-                            <constraint firstItem="bhI-R5-VXh" firstAttribute="height" secondItem="HPk-o2-1xj" secondAttribute="height" multiplier="0.05" id="c9V-S0-vpA"/>
-                            <constraint firstItem="bhI-R5-VXh" firstAttribute="width" secondItem="HPk-o2-1xj" secondAttribute="width" multiplier="0.25" id="ePq-ye-Rzx"/>
+                            <constraint firstItem="fr0-y8-KYL" firstAttribute="height" secondItem="HPk-o2-1xj" secondAttribute="height" multiplier="0.1" id="YIX-Uz-Ir6"/>
+                            <constraint firstItem="HPk-o2-1xj" firstAttribute="top" secondItem="fr0-y8-KYL" secondAttribute="bottom" constant="-60" id="aL3-Li-3Ey"/>
                             <constraint firstItem="b66-Fe-ip1" firstAttribute="centerY" secondItem="HPk-o2-1xj" secondAttribute="centerY" multiplier="1.55" id="fEq-5T-RTV"/>
                             <constraint firstItem="IGC-xb-b2h" firstAttribute="height" secondItem="HPk-o2-1xj" secondAttribute="height" multiplier="0.075" id="fTe-aE-o2q"/>
                             <constraint firstItem="b66-Fe-ip1" firstAttribute="height" secondItem="MYb-Dw-VjH" secondAttribute="height" id="fsX-SH-Exu"/>
-                            <constraint firstItem="bhI-R5-VXh" firstAttribute="top" secondItem="HPk-o2-1xj" secondAttribute="top" id="fwB-QV-zXO"/>
                             <constraint firstItem="fN5-Ke-69l" firstAttribute="height" secondItem="HPk-o2-1xj" secondAttribute="height" multiplier="0.4" id="jgY-jV-BCT"/>
                             <constraint firstItem="fN5-Ke-69l" firstAttribute="centerY" secondItem="HPk-o2-1xj" secondAttribute="centerY" multiplier="0.6" id="kZz-Ka-emE"/>
+                            <constraint firstItem="fr0-y8-KYL" firstAttribute="centerX" secondItem="HPk-o2-1xj" secondAttribute="centerX" id="lUC-IR-nCu"/>
                             <constraint firstItem="HPk-o2-1xj" firstAttribute="bottom" secondItem="IGC-xb-b2h" secondAttribute="bottom" id="r3U-ts-W4c"/>
                             <constraint firstItem="fN5-Ke-69l" firstAttribute="width" secondItem="HPk-o2-1xj" secondAttribute="width" multiplier="0.9" id="rXR-zt-Udh"/>
+                            <constraint firstItem="fr0-y8-KYL" firstAttribute="width" secondItem="HPk-o2-1xj" secondAttribute="width" multiplier="0.25" id="ufq-sq-nPD"/>
                             <constraint firstItem="MYb-Dw-VjH" firstAttribute="width" secondItem="HPk-o2-1xj" secondAttribute="width" multiplier="0.9" id="yjh-SV-fe9"/>
                             <constraint firstItem="IGC-xb-b2h" firstAttribute="centerX" secondItem="HPk-o2-1xj" secondAttribute="centerX" id="zI4-58-8sx"/>
                             <constraint firstItem="MYb-Dw-VjH" firstAttribute="centerY" secondItem="HPk-o2-1xj" secondAttribute="centerY" multiplier="1.2" id="zWD-iG-QFt"/>
@@ -188,10 +188,10 @@
                     <connections>
                         <outlet property="btnAnswer1" destination="MYb-Dw-VjH" id="nLa-xo-IM4"/>
                         <outlet property="btnAnswer2" destination="b66-Fe-ip1" id="Cx0-cW-xYa"/>
+                        <outlet property="lblPoints" destination="fr0-y8-KYL" id="hzu-2X-Y5d"/>
                         <outlet property="lblQuestion" destination="fN5-Ke-69l" id="WTQ-go-Krn"/>
                         <outlet property="lblResult" destination="IGC-xb-b2h" id="5HE-uC-FBY"/>
                         <outlet property="lblRight" destination="FyD-WA-TNQ" id="yMK-O4-6Jm"/>
-                        <outlet property="lblTimer" destination="bhI-R5-VXh" id="WRw-RF-7yF"/>
                         <outlet property="lblWrong" destination="3gj-Xr-YEi" id="AV9-P7-mf9"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="MYb-Dw-VjH" id="0yJ-Yb-xgc"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="b66-Fe-ip1" id="OpE-Ss-kjo"/>
@@ -205,7 +205,7 @@
                         <outletCollection property="outletCollectionLights" destination="IyC-d9-Wyv" id="0Yk-Y4-Xtg"/>
                         <outletCollection property="outletCollectionLights" destination="zx7-e4-FNn" id="Ywf-c1-sWH"/>
                         <outletCollection property="outletCollectionLights" destination="HQG-Tu-LtJ" id="mqF-w2-6v2"/>
-                        <segue destination="lmu-rD-Y2E" kind="presentation" identifier="seguePlayToSpeed" modalTransitionStyle="flipHorizontal" id="aWS-fQ-LrD"/>
+                        <segue destination="lmu-rD-Y2E" kind="show" identifier="seguePlayToSpeed" id="aWS-fQ-LrD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZf-mP-F64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,7 +221,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY8-aD-Kfv" customClass="Buttons">
-                                <rect key="frame" x="44" y="489" width="254" height="30"/>
+                                <rect key="frame" x="0.0" y="489" width="298" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -229,7 +229,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-Nh-pIl" customClass="Buttons">
-                                <rect key="frame" x="44" y="361" width="254" height="30"/>
+                                <rect key="frame" x="16" y="361" width="282" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -237,7 +237,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-Kk-9H8" customClass="Buttons">
-                                <rect key="frame" x="44" y="427" width="254" height="30"/>
+                                <rect key="frame" x="16" y="427" width="282" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -245,7 +245,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-vB-Fff" customClass="Buttons">
-                                <rect key="frame" x="44" y="303" width="254" height="30"/>
+                                <rect key="frame" x="16" y="294" width="282" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -311,12 +311,12 @@
                         <outletCollection property="outletCollectionbtnAnswers" destination="FWX-Nh-pIl" id="cxy-7I-UQX"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="wfq-Kk-9H8" id="5LQ-LH-cbf"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="OY8-aD-Kfv" id="tTJ-vx-FhZ"/>
-                        <segue destination="Wpn-ay-ctE" kind="presentation" identifier="segueSpeedToPlay" modalTransitionStyle="crossDissolve" id="At6-xL-Zrv"/>
+                        <segue destination="Wpn-ay-ctE" kind="custom" identifier="segueSpeedToPlay" customClass="curlUpSegue" id="At6-xL-Zrv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH3-2a-Ks9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4496.8000000000002" y="8.5457271364317844"/>
+            <point key="canvasLocation" x="4829.6000000000004" y="-4.0479760119940034"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tdn-fo-Nd3">

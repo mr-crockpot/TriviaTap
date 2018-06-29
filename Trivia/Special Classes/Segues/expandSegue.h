@@ -1,13 +1,13 @@
 //
-//  customSegue.h
+//  expandSegue.h
 //  Trivia
 //
-//  Created by Adam Schor on 6/24/18.
+//  Created by Adam Schor on 6/28/18.
 //  Copyright © 2018 AandA Development. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface customSegue : UIStoryboardSegue
+@interface expandSegue : UIStoryboardSegue
 
 @end

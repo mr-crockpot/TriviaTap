@@ -53,5 +53,12 @@
 
 @property (strong, nonatomic) UIBarButtonItem *barBtntimer;
 
+@property BOOL levelFlash;
+@property (strong, nonatomic) UILabel *titleLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *lblPoints;
+@property NSInteger points;
+
+
 
 @end

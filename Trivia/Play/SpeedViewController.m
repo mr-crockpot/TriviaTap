@@ -7,6 +7,7 @@
 //
 
 #import "SpeedViewController.h"
+#import "PlayViewController.h"
 
 
 @interface SpeedViewController ()
@@ -16,7 +17,8 @@
 @implementation SpeedViewController
 
 - (void)viewDidLoad {
-    
+  //  NSInteger incomer = _incomingLevel;
+  
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
     _labelNumber = 0;
     _btnSubmit.enabled = NO;
@@ -110,7 +112,7 @@
         [_arrCheckAnswers addObject:_arrAnswers[z][2]];
     }
     
-     NSLog(@"The load data array answers is %@",_arrCheckAnswers);
+    
     
     
     
@@ -129,6 +131,18 @@
      NSInteger min = [[testMaxArray valueForKeyPath:@"@min.self"] integerValue];
      NSLog(@"The min  is %li",min);
      */
+    
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    /*
+     SpeedViewController *speedViewController = [(UINavigationController *)segue.destinationViewController topViewController];
+     */
+    PlayViewController *playViewController = [(UINavigationController *) segue.destinationViewController topViewController];
+    playViewController.level = _incomingLevel + 1;
+    playViewController.points = _points;
     
     
 }

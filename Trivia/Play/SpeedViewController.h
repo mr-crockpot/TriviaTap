@@ -36,5 +36,9 @@
 
 @property (strong, nonatomic) IBOutlet Labels *lblQuestion;
 
+@property NSInteger incomingLevel;
+
+@property NSInteger points;
+
 
 @end
