@@ -206,6 +206,7 @@
                         <outletCollection property="outletCollectionLights" destination="zx7-e4-FNn" id="Ywf-c1-sWH"/>
                         <outletCollection property="outletCollectionLights" destination="HQG-Tu-LtJ" id="mqF-w2-6v2"/>
                         <segue destination="lmu-rD-Y2E" kind="show" identifier="seguePlayToSpeed" id="aWS-fQ-LrD"/>
+                        <segue destination="7gq-4L-4Ha" kind="custom" identifier="seguePlayToBonus" customClass="expandSegue" id="Huw-R5-nyn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZf-mP-F64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,6 +319,30 @@
             </objects>
             <point key="canvasLocation" x="4335" y="9"/>
         </scene>
+        <!--Bonus View Controller-->
+        <scene sceneID="e5D-TQ-uAf">
+            <objects>
+                <viewController id="7gq-4L-4Ha" customClass="BonusViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="stJ-O9-P7E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bonus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQb-SI-EQg">
+                                <rect key="frame" x="163" y="58" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pKk-Yo-41B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4iU-Hv-k2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="716"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tdn-fo-Nd3">
             <objects>
@@ -374,6 +399,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="qLf-ob-vtV"/>
         <segue reference="At6-xL-Zrv"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,6 +26,7 @@
 		E38FB98520E5D63C0011A9D8 /* curlUpSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98420E5D63C0011A9D8 /* curlUpSegue.m */; };
 		E38FB98820E5D69B0011A9D8 /* expandSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98720E5D69B0011A9D8 /* expandSegue.m */; };
 		E38FB98E20E6CEEA0011A9D8 /* slideRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98D20E6CEEA0011A9D8 /* slideRightSegue.m */; };
+		E38FB99120E6F86A0011A9D8 /* BonusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB99020E6F86A0011A9D8 /* BonusViewController.m */; };
 		E3E4EA3E20CEFF8D00322B27 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA3D20CEFF8D00322B27 /* DBManager.m */; };
 		E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4020CF01AD00322B27 /* StartViewController.m */; };
 		E3E4EA4520CF01E800322B27 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4EA4420CF01E800322B27 /* PlayViewController.m */; };
@@ -107,6 +108,8 @@
 		E38FB98720E5D69B0011A9D8 /* expandSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = expandSegue.m; sourceTree = "<group>"; };
 		E38FB98C20E6CEEA0011A9D8 /* slideRightSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = slideRightSegue.h; sourceTree = "<group>"; };
 		E38FB98D20E6CEEA0011A9D8 /* slideRightSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = slideRightSegue.m; sourceTree = "<group>"; };
+		E38FB98F20E6F86A0011A9D8 /* BonusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BonusViewController.h; sourceTree = "<group>"; };
+		E38FB99020E6F86A0011A9D8 /* BonusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BonusViewController.m; sourceTree = "<group>"; };
 		E3E4EA3C20CEFF8D00322B27 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		E3E4EA3D20CEFF8D00322B27 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		E3E4EA3F20CF01AD00322B27 /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
@@ -241,6 +244,8 @@
 				E3E4EA4020CF01AD00322B27 /* StartViewController.m */,
 				E3E4EA4320CF01E800322B27 /* PlayViewController.h */,
 				E3E4EA4420CF01E800322B27 /* PlayViewController.m */,
+				E38FB98F20E6F86A0011A9D8 /* BonusViewController.h */,
+				E38FB99020E6F86A0011A9D8 /* BonusViewController.m */,
 				E3ED693320DEF01E00E59D78 /* SpeedViewController.h */,
 				E3ED693420DEF01E00E59D78 /* SpeedViewController.m */,
 			);
@@ -429,6 +434,7 @@
 				E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */,
 				E341272520E052E30076BE66 /* Buttons.m in Sources */,
 				E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */,
+				E38FB99120E6F86A0011A9D8 /* BonusViewController.m in Sources */,
 				E38FB98520E5D63C0011A9D8 /* curlUpSegue.m in Sources */,
 				E38FB98820E5D69B0011A9D8 /* expandSegue.m in Sources */,
 				E3E4EA5D20D04B2200322B27 /* Validate.m in Sources */,

@@ -224,7 +224,8 @@
     if (_numberRight == 5) {
         //_level = _level + 1;
   
-        [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+       [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+     //     [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
         
         //[self setTitleLabelwithLevel:_level];
         _numberWrong = 0;
