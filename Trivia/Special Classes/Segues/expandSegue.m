@@ -29,7 +29,7 @@ CGPoint originalCenter = destinationViewController.view.center;
                      
                  }
                  completion:^(BOOL finished){
-                     [destinationViewController.view removeFromSuperview]; // remove from temp super view
+                     [destinationViewController.view removeFromSuperview]; 
                      [sourceViewController presentViewController:destinationViewController animated:NO completion:NULL];
                       }];
 }

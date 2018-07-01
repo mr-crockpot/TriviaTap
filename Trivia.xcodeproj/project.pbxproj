@@ -21,6 +21,8 @@
 		E341272620E052E30076BE66 /* Buttons.m in Sources */ = {isa = PBXBuildFile; fileRef = E341272420E052E30076BE66 /* Buttons.m */; };
 		E341272720E052E30076BE66 /* Buttons.m in Sources */ = {isa = PBXBuildFile; fileRef = E341272420E052E30076BE66 /* Buttons.m */; };
 		E3659EB220E87FB30043F5CC /* BonusAnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3659EB120E87FB30043F5CC /* BonusAnswerViewController.m */; };
+		E3659EB520E979960043F5CC /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
+		E3659EB620E979960043F5CC /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E38FB97520E08A1B0011A9D8 /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E38FB97F20E5D57C0011A9D8 /* flipLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97E20E5D57C0011A9D8 /* flipLeftSegue.m */; };
 		E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98120E5D5C10011A9D8 /* flipRightSegue.m */; };
@@ -223,6 +225,28 @@
 			path = TriviaUITests;
 			sourceTree = "<group>";
 		};
+		E3659EB320E9794B0043F5CC /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4EA3D20CEFF8D00322B27 /* DBManager.m */,
+				E3E4EA3C20CEFF8D00322B27 /* DBManager.h */,
+				E3E4EA5C20D04B2200322B27 /* Validate.m */,
+				E3E4EA5B20D04B2200322B27 /* Validate.h */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		E3659EB420E979760043F5CC /* Buttons & Labels */ = {
+			isa = PBXGroup;
+			children = (
+				E341272320E052E30076BE66 /* Buttons.h */,
+				E341272420E052E30076BE66 /* Buttons.m */,
+				E38FB97320E08A1B0011A9D8 /* Labels.h */,
+				E38FB97420E08A1B0011A9D8 /* Labels.m */,
+			);
+			path = "Buttons & Labels";
+			sourceTree = "<group>";
+		};
 		E38FB97C20E5A0030011A9D8 /* Segues */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,12 +271,12 @@
 				E3E4EA4020CF01AD00322B27 /* StartViewController.m */,
 				E3E4EA4320CF01E800322B27 /* PlayViewController.h */,
 				E3E4EA4420CF01E800322B27 /* PlayViewController.m */,
+				E3ED693320DEF01E00E59D78 /* SpeedViewController.h */,
+				E3ED693420DEF01E00E59D78 /* SpeedViewController.m */,
 				E38FB98F20E6F86A0011A9D8 /* BonusViewController.h */,
 				E38FB99020E6F86A0011A9D8 /* BonusViewController.m */,
 				E3659EB020E87FB30043F5CC /* BonusAnswerViewController.h */,
 				E3659EB120E87FB30043F5CC /* BonusAnswerViewController.m */,
-				E3ED693320DEF01E00E59D78 /* SpeedViewController.h */,
-				E3ED693420DEF01E00E59D78 /* SpeedViewController.m */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -261,14 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				E38FB97C20E5A0030011A9D8 /* Segues */,
-				E3E4EA3D20CEFF8D00322B27 /* DBManager.m */,
-				E3E4EA3C20CEFF8D00322B27 /* DBManager.h */,
-				E341272320E052E30076BE66 /* Buttons.h */,
-				E341272420E052E30076BE66 /* Buttons.m */,
-				E38FB97320E08A1B0011A9D8 /* Labels.h */,
-				E38FB97420E08A1B0011A9D8 /* Labels.m */,
-				E3E4EA5C20D04B2200322B27 /* Validate.m */,
-				E3E4EA5B20D04B2200322B27 /* Validate.h */,
+				E3659EB320E9794B0043F5CC /* Methods */,
+				E3659EB420E979760043F5CC /* Buttons & Labels */,
 			);
 			path = "Special Classes";
 			sourceTree = "<group>";
@@ -457,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E332678C20CCE4EC00C13ECC /* TriviaTests.m in Sources */,
+				E3659EB520E979960043F5CC /* Labels.m in Sources */,
 				E341272620E052E30076BE66 /* Buttons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E332679720CCE4EC00C13ECC /* TriviaUITests.m in Sources */,
+				E3659EB620E979960043F5CC /* Labels.m in Sources */,
 				E341272720E052E30076BE66 /* Buttons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

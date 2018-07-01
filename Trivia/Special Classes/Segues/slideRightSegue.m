@@ -28,6 +28,8 @@
                          [destinationViewController.view setFrame:CGRectMake(0, 0, width,height)];
                          
                      } completion:^(BOOL finished) {
+                         
+                         [destinationViewController.view removeFromSuperview];
                          [sourceViewController presentViewController:destinationViewController animated:NO completion:NULL];
                      }];
     

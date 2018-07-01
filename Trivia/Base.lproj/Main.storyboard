@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="Xlm-it-ssu"/>
                     <connections>
                         <outlet property="testButton3" destination="iIT-ym-M0j" id="O83-tJ-k2X"/>
-                        <segue destination="QZs-vS-0e0" kind="show" identifier="segueStartToPlay" id="LS2-oo-BqB"/>
+                        <segue destination="QZs-vS-0e0" kind="show" identifier="segueStartToPlay" customClass="curlUpSegue" id="LS2-oo-BqB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -223,7 +223,7 @@
                         <outletCollection property="outletCollectionLights" destination="zx7-e4-FNn" id="Ywf-c1-sWH"/>
                         <outletCollection property="outletCollectionLights" destination="HQG-Tu-LtJ" id="mqF-w2-6v2"/>
                         <segue destination="7gq-4L-4Ha" kind="custom" identifier="seguePlayToBonus" customClass="expandSegue" id="Huw-R5-nyn"/>
-                        <segue destination="hFR-nB-mAn" kind="show" identifier="seguePlayToSpeed" id="b4w-y6-xrn"/>
+                        <segue destination="hFR-nB-mAn" kind="show" identifier="seguePlayToSpeed" customClass="flipLeftSegue" id="b4w-y6-xrn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZf-mP-F64" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,7 +329,7 @@
                         <outletCollection property="outletCollectionbtnAnswers" destination="FWX-Nh-pIl" id="cxy-7I-UQX"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="wfq-Kk-9H8" id="5LQ-LH-cbf"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="OY8-aD-Kfv" id="tTJ-vx-FhZ"/>
-                        <segue destination="QZs-vS-0e0" kind="show" identifier="segueSpeedToPlay" id="lBr-UV-jdn"/>
+                        <segue destination="QZs-vS-0e0" kind="show" identifier="segueSpeedToPlay" customClass="flipRightSegue" id="lBr-UV-jdn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH3-2a-Ks9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -465,6 +465,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lBr-UV-jdn"/>
+        <segue reference="LS2-oo-BqB"/>
     </inferredMetricsTieBreakers>
 </document>

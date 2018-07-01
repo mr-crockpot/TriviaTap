@@ -15,11 +15,13 @@
     
     
     [sourceViewController.view addSubview:destinationViewController.view];
-    [UIView transitionWithView:sourceViewController.navigationController.view duration:1.0
-                       options:(UIViewAnimationOptionTransitionCurlUp| UIViewAnimationOptionCurveEaseIn)
-                    animations:^{
-                        [sourceViewController.navigationController presentedViewController];
-                    }
-                    completion:NULL];
+    
+    [UIView transitionWithView:sourceViewController.view duration:0.5 options:(UIViewAnimationOptionTransitionCurlUp|UIViewAnimationOptionCurveLinear) animations:^{
+        [sourceViewController presentedViewController];
+    } completion:^(BOOL finished) {
+        
+        [destinationViewController.view removeFromSuperview];
+        [sourceViewController presentViewController:destinationViewController animated:NO completion:NULL];
+    }];
 }
 @end
