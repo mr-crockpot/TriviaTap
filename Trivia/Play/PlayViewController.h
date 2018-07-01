@@ -49,6 +49,7 @@
 @property float highEnd;
 @property float lowEnd;
 
+
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *outletCollectionLights;
 
 @property (strong, nonatomic) UIBarButtonItem *barBtntimer;

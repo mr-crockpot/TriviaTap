@@ -208,6 +208,7 @@
                         <outlet property="lblQuestion" destination="fN5-Ke-69l" id="WTQ-go-Krn"/>
                         <outlet property="lblResult" destination="IGC-xb-b2h" id="5HE-uC-FBY"/>
                         <outlet property="lblRight" destination="FyD-WA-TNQ" id="yMK-O4-6Jm"/>
+                        <outlet property="lblTimer" destination="UQ9-sp-Gnb" id="cRG-AG-VoZ"/>
                         <outlet property="lblWrong" destination="3gj-Xr-YEi" id="AV9-P7-mf9"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="MYb-Dw-VjH" id="0yJ-Yb-xgc"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="b66-Fe-ip1" id="OpE-Ss-kjo"/>
@@ -328,11 +329,12 @@
                         <outletCollection property="outletCollectionbtnAnswers" destination="FWX-Nh-pIl" id="cxy-7I-UQX"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="wfq-Kk-9H8" id="5LQ-LH-cbf"/>
                         <outletCollection property="outletCollectionbtnAnswers" destination="OY8-aD-Kfv" id="tTJ-vx-FhZ"/>
+                        <segue destination="QZs-vS-0e0" kind="show" identifier="segueSpeedToPlay" id="lBr-UV-jdn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH3-2a-Ks9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170" y="9"/>
+            <point key="canvasLocation" x="2519" y="-10"/>
         </scene>
         <!--Bonus View Controller-->
         <scene sceneID="e5D-TQ-uAf">
@@ -462,4 +464,7 @@
             <point key="canvasLocation" x="2169" y="815"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lBr-UV-jdn"/>
+    </inferredMetricsTieBreakers>
 </document>

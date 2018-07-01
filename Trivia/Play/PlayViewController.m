@@ -32,7 +32,7 @@
     
     //FORMAT TIMER BAR BUTTON
     
-    _barBtntimer.tintColor = [UIColor blueColor];
+    _lblTimer.textColor = [UIColor blueColor];
     
     /*
     _lblTimer.font = [UIFont fontWithName:@"Courier" size:24];
@@ -109,10 +109,6 @@
     self.navigationItem.titleView = _titleLabel;
     
    
-     _barBtntimer = [[UIBarButtonItem alloc] initWithTitle:@"Timer" style:UIBarButtonItemStyleDone target:nil action:nil];
-    self.navigationItem.rightBarButtonItem = _barBtntimer;
-   _barBtntimer.tintColor = [UIColor blueColor];
- 
     [_titleLabel sizeToFit];
 }
 
@@ -224,8 +220,8 @@
     if (_numberRight == 1) {
         //_level = _level + 1;
   
-      // [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
-          [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
+      [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+      //    [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
         
         //[self setTitleLabelwithLevel:_level];
         _numberWrong = 0;
@@ -258,8 +254,8 @@
     
     if (_startTime<10) {
          self.navigationController.navigationBar.backgroundColor = [UIColor yellowColor];
-        _barBtntimer.tintColor = [UIColor redColor];
-       
+        _lblTimer.textColor = [UIColor redColor];
+        
         _levelFlash = !_levelFlash;
         if (_levelFlash) {
             _titleLabel.textColor = [UIColor clearColor];
@@ -271,15 +267,15 @@
     
     if (_startTime<0.001) {
         [_gameTimer invalidate];
-        [_barBtntimer setTitle:@"Over"];
-        [_barBtntimer setTintColor:[UIColor blueColor]];
+        _lblTimer.text = @"Over";
+        _lblTimer.textColor = [UIColor blueColor];
         _titleLabel.textColor = [UIColor blueColor];
        self.navigationController.navigationBar.backgroundColor = [UIColor redColor];
        
         
     }
     else {
-    _barBtntimer.title = [NSString stringWithFormat:@"%.01f",_startTime];
+    _lblTimer.text = [NSString stringWithFormat:@"%.01f",_startTime];
   
       
     }
@@ -289,7 +285,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"seguePlayToSpeed"]) {
    
-        SpeedViewController *speedViewController = [(UINavigationController *)segue.destinationViewController topViewController];
+        SpeedViewController *speedViewController =[segue destinationViewController];
         speedViewController.incomingLevel = _level;
         speedViewController.points = _points;
     }

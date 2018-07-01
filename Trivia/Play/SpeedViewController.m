@@ -140,7 +140,7 @@
     /*
      SpeedViewController *speedViewController = [(UINavigationController *)segue.destinationViewController topViewController];
      */
-    PlayViewController *playViewController = [(UINavigationController *) segue.destinationViewController topViewController];
+    PlayViewController *playViewController = [segue destinationViewController];
     playViewController.level = _incomingLevel + 1;
     playViewController.points = _points;
     
