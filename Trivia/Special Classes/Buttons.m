@@ -10,47 +10,6 @@
 
 @implementation Buttons
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
-/*+(UIButton *)answerButton {
- 
-    UIButton *answerButton = [[UIButton alloc] init];
-    [answerButton setTitle:@"Test Object" forState:UIControlStateNormal];
-    answerButton.backgroundColor = [UIColor redColor];
-    return answerButton;
-    
-    
-}
-
-- (Buttons*)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor greenColor];
-        NSLog(@"Init with Frame was called");
-    }
-    return self;
-}
-
-- (void)drawRect:(CGRect)rect {
-    self.backgroundColor = [UIColor greenColor];
-}
-
-- (Buttons*)init
-{
-    self = [super init];
-    if (self) {
-        self.backgroundColor = [UIColor orangeColor];
-        NSLog(@"Init was called");
-    }
-    return self;
-}*/
 
 -(void)formatButtonWithString: (NSString *)incomeString{
     

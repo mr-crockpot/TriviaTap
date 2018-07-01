@@ -221,7 +221,7 @@
         [_gameTimer invalidate];
         
     }
-    if (_numberRight == 5) {
+    if (_numberRight == 1) {
         //_level = _level + 1;
   
       // [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
