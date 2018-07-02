@@ -21,7 +21,7 @@
    
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
     _lblPoints.text = [NSString stringWithFormat:@"%li",_points];
-    _startTime = 60;
+    _startTime = 20;
     _gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCountDown) userInfo:nil repeats:YES];
     _highEnd = .8;
     _lowEnd = .2f;
@@ -104,12 +104,16 @@
 }
 
 -(void)setTitleLabelwithLevel: (NSInteger) level {
-    _titleLabel = [[UILabel alloc] init];
-    _titleLabel.text = [NSString stringWithFormat:@"Level %li",_level];
-    self.navigationItem.titleView = _titleLabel;
-    
    
-    [_titleLabel sizeToFit];
+        _navBar.topItem.title = [NSString stringWithFormat:@"Level %li",_level + 1];
+    _navBar.backgroundColor = [UIColor greenColor];
+    
+     NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+     [UIColor whiteColor],NSForegroundColorAttributeName,
+     nil];
+     
+     [_navBar setTitleTextAttributes:navbarTitleTextAttributes];
+     
 }
 
 #pragma mark Load Data
@@ -220,8 +224,8 @@
     if (_numberRight == 1) {
         //_level = _level + 1;
   
-   //   [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
-          [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
+     // [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+        [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
         
         //[self setTitleLabelwithLevel:_level];
         _numberWrong = 0;
@@ -259,9 +263,11 @@
         _levelFlash = !_levelFlash;
         if (_levelFlash) {
             _titleLabel.textColor = [UIColor clearColor];
+            _navBar.backgroundColor = [UIColor clearColor];
         }
         else {
             _titleLabel.textColor = [UIColor redColor];
+            _navBar.backgroundColor = [UIColor redColor];
         }
     }
     

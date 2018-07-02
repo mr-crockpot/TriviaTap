@@ -23,6 +23,10 @@
 
 @property (strong, nonatomic) NSMutableArray *arrQuestions;
 @property (strong, nonatomic) NSMutableArray *arrAnswers;
+@property (strong, nonatomic) NSMutableArray *arrDifficulty;
+
+@property (strong, nonatomic) NSString* question;
+
 
 @property (strong, nonatomic) IBOutletCollection(Buttons) NSArray *outletCollectionMyButtons;
 - (IBAction)btnQuestionsPressed:(id)sender;

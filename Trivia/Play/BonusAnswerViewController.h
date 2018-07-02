@@ -13,11 +13,15 @@
 @interface BonusAnswerViewController : UIViewController
 @property (strong, nonatomic) IBOutletCollection(Buttons) NSArray *outletCollectionBtnAnswers;
 
-- (IBAction)btnAnswerPressed:(id)sender;
+- (IBAction)btnAnswerPressed:(UIButton*)sender;
 
 @property NSInteger points;
 @property NSInteger bet;
 @property BOOL correctAnswer;
+
+@property NSString *question;
+@property (strong, nonatomic) IBOutlet Labels *lblQuestion;
+
 
 @property (strong, nonatomic) NSMutableArray* arrAnswers;
 

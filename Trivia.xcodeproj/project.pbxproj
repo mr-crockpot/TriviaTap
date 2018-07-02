@@ -23,6 +23,8 @@
 		E3659EB220E87FB30043F5CC /* BonusAnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3659EB120E87FB30043F5CC /* BonusAnswerViewController.m */; };
 		E3659EB520E979960043F5CC /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E3659EB620E979960043F5CC /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
+		E3659EBA20E97AA80043F5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
+		E3659EBB20E97AA80043F5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
 		E38FB97520E08A1B0011A9D8 /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E38FB97F20E5D57C0011A9D8 /* flipLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97E20E5D57C0011A9D8 /* flipLeftSegue.m */; };
 		E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98120E5D5C10011A9D8 /* flipRightSegue.m */; };
@@ -55,9 +57,6 @@
 		E3E4EA8220D6109300322B27 /* concrete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8120D6109300322B27 /* concrete.jpg */; };
 		E3E4EA8320D6109300322B27 /* concrete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8120D6109300322B27 /* concrete.jpg */; };
 		E3E4EA8420D6109300322B27 /* concrete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8120D6109300322B27 /* concrete.jpg */; };
-		E3E4EA8A20D6C22A00322B27 /* metalRidges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8920D6C22900322B27 /* metalRidges.jpg */; };
-		E3E4EA8B20D6C22A00322B27 /* metalRidges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8920D6C22900322B27 /* metalRidges.jpg */; };
-		E3E4EA8C20D6C22A00322B27 /* metalRidges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8920D6C22900322B27 /* metalRidges.jpg */; };
 		E3E4EA8E20D6C25600322B27 /* bronze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8D20D6C25600322B27 /* bronze.jpg */; };
 		E3E4EA8F20D6C25600322B27 /* bronze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8D20D6C25600322B27 /* bronze.jpg */; };
 		E3E4EA9020D6C25600322B27 /* bronze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E4EA8D20D6C25600322B27 /* bronze.jpg */; };
@@ -101,6 +100,7 @@
 		E341272420E052E30076BE66 /* Buttons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Buttons.m; sourceTree = "<group>"; };
 		E3659EB020E87FB30043F5CC /* BonusAnswerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BonusAnswerViewController.h; sourceTree = "<group>"; };
 		E3659EB120E87FB30043F5CC /* BonusAnswerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BonusAnswerViewController.m; sourceTree = "<group>"; };
+		E3659EB820E97A300043F5CC /* metalRidges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metalRidges.jpg; sourceTree = "<group>"; };
 		E38FB97320E08A1B0011A9D8 /* Labels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Labels.h; sourceTree = "<group>"; };
 		E38FB97420E08A1B0011A9D8 /* Labels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Labels.m; sourceTree = "<group>"; };
 		E38FB97D20E5D57C0011A9D8 /* flipLeftSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flipLeftSegue.h; sourceTree = "<group>"; };
@@ -130,7 +130,6 @@
 		E3E4EA7920D60FC600322B27 /* darkWood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkWood.jpg; sourceTree = "<group>"; };
 		E3E4EA7D20D60FDA00322B27 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
 		E3E4EA8120D6109300322B27 /* concrete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = concrete.jpg; sourceTree = "<group>"; };
-		E3E4EA8920D6C22900322B27 /* metalRidges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = metalRidges.jpg; path = ../../../../Downloads/metalRidges.jpg; sourceTree = "<group>"; };
 		E3E4EA8D20D6C25600322B27 /* bronze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bronze.jpg; sourceTree = "<group>"; };
 		E3ED693320DEF01E00E59D78 /* SpeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedViewController.h; sourceTree = "<group>"; };
 		E3ED693420DEF01E00E59D78 /* SpeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedViewController.m; sourceTree = "<group>"; };
@@ -169,15 +168,8 @@
 				E332679520CCE4EC00C13ECC /* TriviaUITests */,
 				E332677020CCE4EA00C13ECC /* Products */,
 				E341271F20E03B630076BE66 /* trivia.db */,
-				E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */,
-				E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */,
-				E3E4EA7120D5FA4800322B27 /* blackStone.jpg */,
-				E3E4EA7520D60FB300322B27 /* parquet.jpg */,
-				E3E4EA7920D60FC600322B27 /* darkWood.jpg */,
-				E3E4EA8120D6109300322B27 /* concrete.jpg */,
-				E3E4EA7D20D60FDA00322B27 /* wood.jpg */,
-				E3E4EA8D20D6C25600322B27 /* bronze.jpg */,
-				E3E4EA8920D6C22900322B27 /* metalRidges.jpg */,
+				E3659EBC20E97ACC0043F5CC /* Other */,
+				E3659EB720E97A180043F5CC /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,15 +186,12 @@
 		E332677120CCE4EA00C13ECC /* Trivia */ = {
 			isa = PBXGroup;
 			children = (
+				E332678020CCE4EC00C13ECC /* Info.plist */,
 				E332677820CCE4EA00C13ECC /* Main.storyboard */,
 				E332677220CCE4EA00C13ECC /* AppDelegate.h */,
 				E332677320CCE4EA00C13ECC /* AppDelegate.m */,
 				E3E4EA5A20D04A1C00322B27 /* Special Classes */,
 				E3E4EA4220CF01C500322B27 /* Play */,
-				E332677B20CCE4EC00C13ECC /* Assets.xcassets */,
-				E332677D20CCE4EC00C13ECC /* LaunchScreen.storyboard */,
-				E332678020CCE4EC00C13ECC /* Info.plist */,
-				E332678120CCE4EC00C13ECC /* main.m */,
 			);
 			path = Trivia;
 			sourceTree = "<group>";
@@ -245,6 +234,32 @@
 				E38FB97420E08A1B0011A9D8 /* Labels.m */,
 			);
 			path = "Buttons & Labels";
+			sourceTree = "<group>";
+		};
+		E3659EB720E97A180043F5CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E3E4EA6920D5DA1000322B27 /* SteelCircular.jpg */,
+				E3E4EA6D20D5FA1A00322B27 /* metalGrid.jpg */,
+				E3E4EA7120D5FA4800322B27 /* blackStone.jpg */,
+				E3E4EA7520D60FB300322B27 /* parquet.jpg */,
+				E3E4EA7920D60FC600322B27 /* darkWood.jpg */,
+				E3E4EA8120D6109300322B27 /* concrete.jpg */,
+				E3E4EA7D20D60FDA00322B27 /* wood.jpg */,
+				E3E4EA8D20D6C25600322B27 /* bronze.jpg */,
+				E3659EB820E97A300043F5CC /* metalRidges.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E3659EBC20E97ACC0043F5CC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E332677B20CCE4EC00C13ECC /* Assets.xcassets */,
+				E332677D20CCE4EC00C13ECC /* LaunchScreen.storyboard */,
+				E332678120CCE4EC00C13ECC /* main.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E38FB97C20E5A0030011A9D8 /* Segues */ = {
@@ -405,7 +420,6 @@
 				E3E4EA7A20D60FC700322B27 /* darkWood.jpg in Resources */,
 				E341272020E03B630076BE66 /* trivia.db in Resources */,
 				E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */,
-				E3E4EA8A20D6C22A00322B27 /* metalRidges.jpg in Resources */,
 				E3E4EA8E20D6C25600322B27 /* bronze.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +430,6 @@
 			files = (
 				E3E4EA6F20D5FA1A00322B27 /* metalGrid.jpg in Resources */,
 				E3E4EA6B20D5DA1100322B27 /* SteelCircular.jpg in Resources */,
-				E3E4EA8B20D6C22A00322B27 /* metalRidges.jpg in Resources */,
 				E3E4EA7320D5FA4800322B27 /* blackStone.jpg in Resources */,
 				E3E4EA7B20D60FC700322B27 /* darkWood.jpg in Resources */,
 				E3E4EA8F20D6C25600322B27 /* bronze.jpg in Resources */,
@@ -433,7 +446,6 @@
 			files = (
 				E3E4EA7020D5FA1A00322B27 /* metalGrid.jpg in Resources */,
 				E3E4EA6C20D5DA1100322B27 /* SteelCircular.jpg in Resources */,
-				E3E4EA8C20D6C22A00322B27 /* metalRidges.jpg in Resources */,
 				E3E4EA7420D5FA4800322B27 /* blackStone.jpg in Resources */,
 				E3E4EA7C20D60FC700322B27 /* darkWood.jpg in Resources */,
 				E3E4EA9020D6C25600322B27 /* bronze.jpg in Resources */,
@@ -476,6 +488,7 @@
 			files = (
 				E332678C20CCE4EC00C13ECC /* TriviaTests.m in Sources */,
 				E3659EB520E979960043F5CC /* Labels.m in Sources */,
+				E3659EBA20E97AA80043F5CC /* main.m in Sources */,
 				E341272620E052E30076BE66 /* Buttons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +499,7 @@
 			files = (
 				E332679720CCE4EC00C13ECC /* TriviaUITests.m in Sources */,
 				E3659EB620E979960043F5CC /* Labels.m in Sources */,
+				E3659EBB20E97AA80043F5CC /* main.m in Sources */,
 				E341272720E052E30076BE66 /* Buttons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

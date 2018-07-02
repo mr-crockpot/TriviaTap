@@ -60,6 +60,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblPoints;
 @property NSInteger points;
 
+@property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
 
 
 @end

@@ -210,6 +210,7 @@
                         <outlet property="lblRight" destination="FyD-WA-TNQ" id="yMK-O4-6Jm"/>
                         <outlet property="lblTimer" destination="UQ9-sp-Gnb" id="cRG-AG-VoZ"/>
                         <outlet property="lblWrong" destination="3gj-Xr-YEi" id="AV9-P7-mf9"/>
+                        <outlet property="navBar" destination="z1z-py-vIS" id="2BS-2O-a4M"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="MYb-Dw-VjH" id="0yJ-Yb-xgc"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="b66-Fe-ip1" id="OpE-Ss-kjo"/>
                         <outletCollection property="outletCollectionLights" destination="FyD-WA-TNQ" id="5WM-MB-5lx"/>
@@ -449,14 +450,19 @@
                                 <rect key="frame" x="52" y="353" width="260" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnAnswerPressed:" destination="1s1-TJ-l24" eventType="touchUpInside" id="zsV-3O-fXn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="l4e-9F-QrH"/>
                     </view>
                     <connections>
+                        <outlet property="lblQuestion" destination="OSu-yh-XNH" id="oRC-qB-3Ab"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="67d-RF-fuH" id="2Oo-UF-lrr"/>
                         <outletCollection property="outletCollectionBtnAnswers" destination="FuP-Fw-WWt" id="vv2-Rg-7Ey"/>
+                        <segue destination="QZs-vS-0e0" kind="show" identifier="segueBonusAnswerToPlay" id="Py8-3Y-roj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qmh-QN-yKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -465,6 +471,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LS2-oo-BqB"/>
+        <segue reference="Py8-3Y-roj"/>
     </inferredMetricsTieBreakers>
 </document>
