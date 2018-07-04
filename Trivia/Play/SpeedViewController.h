@@ -11,18 +11,15 @@
 #import "Buttons.h"
 #import "Labels.h"
 
-
-
-
 @interface SpeedViewController : UIViewController
 
 @property (strong, nonatomic) DBManager *dbManager;
 
 @property (strong, nonatomic) IBOutletCollection(Buttons) NSArray *outletCollectionbtnAnswers;
 
+@property (strong, nonatomic) IBOutletCollection(Labels) NSArray *outletCollectionLabelRank;
 
 
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *outletCollectionLabelRank;
 - (IBAction)btnAnswerPressed:(id)sender;
 
 @property NSInteger labelNumber;
@@ -39,6 +36,11 @@
 @property NSInteger incomingLevel;
 
 @property NSInteger points;
+@property (strong, nonatomic) IBOutlet Labels *lblTimer;
 
+@property (strong, nonatomic) IBOutlet Labels *lblPoints;
+@property (strong, nonatomic) IBOutlet Labels *lblResult;
+
+@property NSInteger speedRoundNumber;
 
 @end

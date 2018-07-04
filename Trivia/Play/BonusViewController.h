@@ -10,6 +10,7 @@
 #import "DBManager.h"
 #import "Buttons.h"
 #import "BonusAnswerViewController.h"
+#import "PlayViewController.h"
 
 
 @interface BonusViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
@@ -32,6 +33,7 @@
 - (IBAction)btnQuestionsPressed:(id)sender;
 
 
+@property (strong, nonatomic) IBOutlet Labels *lblPoints;
 
 
 @property NSInteger points;

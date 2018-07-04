@@ -7,12 +7,17 @@
 //
 
 #import "BonusAnswerViewController.h"
+#import "PlayViewController.h"
 
 @interface BonusAnswerViewController ()
 
 @end
 
 @implementation BonusAnswerViewController
+
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,13 +61,22 @@
     if (selectedValue>otherValue) {
         NSLog(@"Right for %li points",_bet);
         _correctAnswer = YES;
+        _points = _points + _bet;
     }
     else {
         NSLog(@"Wrong. You lose %li points",_bet);
         _correctAnswer = NO;
+        _points = _points - _bet;
     }
     
     [self performSegueWithIdentifier:@"segueBonusAnswerToPlay" sender:self];
 
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    PlayViewController *playViewController = [segue destinationViewController];
+    playViewController.points = _points;
+    
 }
 @end

@@ -14,10 +14,15 @@
 
 @implementation BonusViewController
 
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 - (void)viewDidLoad {
     
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
-    
+    _lblPoints.text = [NSString stringWithFormat:@"You have %li points",_points];
+    [_lblPoints formatPointsLabels];
     [self loadQuestions];
     
     
@@ -67,7 +72,7 @@
 
 -(void)arrayForPicker {
     
-    _points = 100;
+   // _points = 100;
     _arrPickerValues = [[NSMutableArray alloc] init];
    
     for (int x=0; x<=_points; x+=10) {

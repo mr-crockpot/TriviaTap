@@ -22,6 +22,7 @@
     self.layer.shadowRadius = 2.0f;
     self.layer.shadowOpacity = 1;
     self.layer.masksToBounds = NO;
+    self.titleLabel.adjustsFontSizeToFitWidth = YES;
     
     NSDictionary *attributes = @{ NSForegroundColorAttributeName : [UIColor blackColor],
                                   NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:36],

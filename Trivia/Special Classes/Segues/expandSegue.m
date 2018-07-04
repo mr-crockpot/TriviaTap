@@ -20,7 +20,7 @@ UIViewController *destinationViewController = self.destinationViewController;
 destinationViewController.view.transform = CGAffineTransformMakeScale(0.05, 0.05);
 CGPoint originalCenter = destinationViewController.view.center;
 
-[UIView animateWithDuration:1
+[UIView animateWithDuration:0.35
                       delay:0.0
                     options:UIViewAnimationOptionCurveEaseInOut
                  animations:^{

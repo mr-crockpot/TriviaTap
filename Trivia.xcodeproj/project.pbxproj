@@ -25,6 +25,7 @@
 		E3659EB620E979960043F5CC /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E3659EBA20E97AA80043F5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
 		E3659EBB20E97AA80043F5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
+		E3659EBF20EA7F9A0043F5CC /* shrinkSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E3659EBE20EA7F9A0043F5CC /* shrinkSegue.m */; };
 		E38FB97520E08A1B0011A9D8 /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E38FB97F20E5D57C0011A9D8 /* flipLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97E20E5D57C0011A9D8 /* flipLeftSegue.m */; };
 		E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98120E5D5C10011A9D8 /* flipRightSegue.m */; };
@@ -101,6 +102,8 @@
 		E3659EB020E87FB30043F5CC /* BonusAnswerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BonusAnswerViewController.h; sourceTree = "<group>"; };
 		E3659EB120E87FB30043F5CC /* BonusAnswerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BonusAnswerViewController.m; sourceTree = "<group>"; };
 		E3659EB820E97A300043F5CC /* metalRidges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metalRidges.jpg; sourceTree = "<group>"; };
+		E3659EBD20EA7F9A0043F5CC /* shrinkSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shrinkSegue.h; sourceTree = "<group>"; };
+		E3659EBE20EA7F9A0043F5CC /* shrinkSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shrinkSegue.m; sourceTree = "<group>"; };
 		E38FB97320E08A1B0011A9D8 /* Labels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Labels.h; sourceTree = "<group>"; };
 		E38FB97420E08A1B0011A9D8 /* Labels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Labels.m; sourceTree = "<group>"; };
 		E38FB97D20E5D57C0011A9D8 /* flipLeftSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flipLeftSegue.h; sourceTree = "<group>"; };
@@ -275,6 +278,8 @@
 				E38FB98420E5D63C0011A9D8 /* curlUpSegue.m */,
 				E38FB98620E5D69B0011A9D8 /* expandSegue.h */,
 				E38FB98720E5D69B0011A9D8 /* expandSegue.m */,
+				E3659EBD20EA7F9A0043F5CC /* shrinkSegue.h */,
+				E3659EBE20EA7F9A0043F5CC /* shrinkSegue.m */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 				E341272520E052E30076BE66 /* Buttons.m in Sources */,
 				E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */,
 				E38FB99120E6F86A0011A9D8 /* BonusViewController.m in Sources */,
+				E3659EBF20EA7F9A0043F5CC /* shrinkSegue.m in Sources */,
 				E38FB98520E5D63C0011A9D8 /* curlUpSegue.m in Sources */,
 				E38FB98820E5D69B0011A9D8 /* expandSegue.m in Sources */,
 				E3E4EA5D20D04B2200322B27 /* Validate.m in Sources */,

@@ -11,6 +11,9 @@
 @interface Labels : UILabel
 
 -(void)formatQuestionLabels;
-
+-(void)formatTimerLabels;
+-(void)formatPointsLabels;
+-(void)formatResultLabels;
+-(void)formatRankLabels;
 
 @end

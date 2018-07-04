@@ -29,7 +29,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *outletCollectionBtnAnswers;
 
 @property (strong, nonatomic) IBOutlet Labels *lblQuestion;
-@property (strong, nonatomic) IBOutlet UILabel *lblResult;
+@property (strong, nonatomic) IBOutlet Labels *lblResult;
 
 @property NSInteger level;
 
@@ -38,7 +38,7 @@
 
 @property NSTimer *gameTimer;
 @property float startTime;
-@property (strong, nonatomic) IBOutlet UILabel *lblTimer;
+@property (strong, nonatomic) IBOutlet Labels *lblTimer;
 
 @property NSInteger numberRight;
 @property NSInteger numberWrong;
@@ -57,7 +57,7 @@
 @property BOOL levelFlash;
 @property (strong, nonatomic) UILabel *titleLabel;
 
-@property (strong, nonatomic) IBOutlet UILabel *lblPoints;
+@property (strong, nonatomic) IBOutlet Labels *lblPoints;
 @property NSInteger points;
 
 @property (strong, nonatomic) IBOutlet UINavigationBar *navBar;

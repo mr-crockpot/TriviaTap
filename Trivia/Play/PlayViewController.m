@@ -8,20 +8,26 @@
 
 #import "PlayViewController.h"
 #import "SpeedViewController.h"
+#import "BonusViewController.h"
 
 @interface PlayViewController ()
 
 @end
 
 @implementation PlayViewController
-
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
 - (void)viewDidLoad {
     
     self.view.backgroundColor = [UIColor whiteColor];
    
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
+    if (!_points) {
+        _points = 0;
+    }
     _lblPoints.text = [NSString stringWithFormat:@"%li",_points];
-    _startTime = 20;
+    _startTime = 60;
     _gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCountDown) userInfo:nil repeats:YES];
     _highEnd = .8;
     _lowEnd = .2f;
@@ -32,16 +38,9 @@
     
     //FORMAT TIMER BAR BUTTON
     
-    _lblTimer.textColor = [UIColor blueColor];
+    [_lblTimer formatTimerLabels];
     
-    /*
-    _lblTimer.font = [UIFont fontWithName:@"Courier" size:24];
-    _lblTimer.textColor = [UIColor blueColor];
-    _lblTimer.layer.borderColor = [[UIColor redColor] CGColor];
-    _lblTimer.layer.borderWidth = 2;
-    _lblTimer.backgroundColor = [UIColor cyanColor];
-    _lblTimer.textAlignment = NSTextAlignmentCenter;
-    */
+
     //FORMAT QUESTION LABEL
     
     [_lblQuestion formatQuestionLabels];
@@ -51,11 +50,11 @@
     for (UILabel *lights in _outletCollectionLights) {
         float width = self.view.frame.size.width/15;
         if (lights.tag<5) {
-            lights.frame = CGRectMake(width*lights.tag, 75, width, width);
+            lights.frame = CGRectMake(width*lights.tag, 50, width, width);
         }
         
         if (lights.tag>4) {
-            lights.frame = CGRectMake(width*15/3 + width*lights.tag, 75, width, width);
+            lights.frame = CGRectMake(width*15/3 + width*lights.tag, 50, width, width);
         }
         lights.text = @"";
         lights.backgroundColor = [UIColor grayColor];
@@ -84,9 +83,13 @@
         
     }
     
+    //FORMAT POINTS LABEL
+    
+    [_lblPoints formatPointsLabels];
+    
     //FORMAT RESULT LABEL
     
-    _lblResult.font = [UIFont fontWithName:@"Helvetica" size:40];
+    [_lblResult formatResultLabels];
     
     [self loadData];
     
@@ -222,10 +225,10 @@
         
     }
     if (_numberRight == 1) {
-        //_level = _level + 1;
+        
   
-     // [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
-        [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
+      [self goToSpeedRound];
+ //       [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
         
         //[self setTitleLabelwithLevel:_level];
         _numberWrong = 0;
@@ -250,6 +253,12 @@
     
         
     
+}
+
+-(void)goToSpeedRound{
+    
+        [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+  
 }
 
 -(void)timerCountDown {
@@ -295,5 +304,11 @@
         speedViewController.incomingLevel = _level;
         speedViewController.points = _points;
     }
+    if ([segue.identifier isEqualToString:@"seguePlayToBonus"]) {
+        BonusViewController *bonusViewController = [segue destinationViewController];
+        bonusViewController.points = _points;
+    }
+    
+    
     }
 @end
