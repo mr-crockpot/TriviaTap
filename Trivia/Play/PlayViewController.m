@@ -227,8 +227,8 @@
     if (_numberRight == 1) {
         
   
-      [self goToSpeedRound];
- //       [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
+    //  [self goToSpeedRound];
+      [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
         
         //[self setTitleLabelwithLevel:_level];
         _numberWrong = 0;

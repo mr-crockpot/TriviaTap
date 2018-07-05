@@ -21,7 +21,9 @@
 
 @property NSString *question;
 @property (strong, nonatomic) IBOutlet Labels *lblQuestion;
+@property (strong, nonatomic) IBOutlet Labels *lblTimer;
 
+@property (strong, nonatomic) IBOutlet Labels *lblPoints;
 
 @property (strong, nonatomic) NSMutableArray* arrAnswers;
 
