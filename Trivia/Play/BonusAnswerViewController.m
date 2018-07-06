@@ -44,7 +44,7 @@
 - (IBAction)btnAnswerPressed:(UIButton*)sender {
     NSInteger selectedTag = sender.tag;
     NSInteger otherTag;
-    NSLog(@"Pressed");
+
     
     if (selectedTag == 0) {
         otherTag = 1;
@@ -59,12 +59,12 @@
     NSInteger otherValue = [_arrAnswers[otherTag][2] integerValue];
     
     if (selectedValue>otherValue) {
-        NSLog(@"Right for %li points",_bet);
+       
         _correctAnswer = YES;
         _points = _points + _bet;
     }
     else {
-        NSLog(@"Wrong. You lose %li points",_bet);
+       
         _correctAnswer = NO;
         _points = _points - _bet;
     }

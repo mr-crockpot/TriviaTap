@@ -32,16 +32,11 @@
     _highEnd = .8;
     _lowEnd = .2f;
     
-    //TITLE LABEL
+   
    
     [self setTitleLabelwithLevel:_level];
     
-    //FORMAT TIMER BAR BUTTON
-    
     [_lblTimer formatTimerLabels];
-    
-
-    //FORMAT QUESTION LABEL
     
     [_lblQuestion formatQuestionLabels];
     
@@ -60,12 +55,12 @@
         lights.backgroundColor = [UIColor grayColor];
         lights.layer.cornerRadius = width/2;
         lights.layer.masksToBounds = YES;
-        
+        NSLog(@"Lights called");
     }
     
     //FORMAT ANSWER BUTTONS
     
-    for (UIButton *btnAnswers in _outletCollectionBtnAnswers) {
+/*    for (UIButton *btnAnswers in _outletCollectionBtnAnswers) {
         [btnAnswers setBackgroundColor:[UIColor whiteColor]];
         btnAnswers.layer.borderColor = [[UIColor blackColor] CGColor];
         btnAnswers.layer.borderWidth = 3;
@@ -82,7 +77,7 @@
         
         
     }
-    
+   */
     //FORMAT POINTS LABEL
     
     [_lblPoints formatPointsLabels];
@@ -91,14 +86,14 @@
     
     [_lblResult formatResultLabels];
     
-    [self loadData];
+  
     
    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 -(void)viewDidAppear:(BOOL)animated {
-    
+      [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -108,7 +103,7 @@
 
 -(void)setTitleLabelwithLevel: (NSInteger) level {
    
-        _navBar.topItem.title = [NSString stringWithFormat:@"Level %li",_level + 1];
+    _navBar.topItem.title = [NSString stringWithFormat:@"Level %li",_level + 1];
     _navBar.backgroundColor = [UIColor greenColor];
     
      NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -150,7 +145,10 @@
   
 }
 
-- (IBAction)btnAnswerPressed:(UIButton *)sender {
+- (IBAction)btnAnswerPressed:(Buttons *)sender {
+    
+    [sender buttonPressAnimation];
+    
     NSInteger resultNumber;
     NSInteger otherTag;
     if (sender.tag == 0) {
@@ -179,10 +177,12 @@
         resultNumber = 0;
     }
     if (_startTime>0) {
-        [self loadData];
-    }
+    
     [self displayResultwithResultNumber:resultNumber];
-    [self assessProgress];
+
+    [self performSelector:@selector(assessProgress) withObject:nil afterDelay:1.0];
+}
+  
 }
 
 -(void)displayResultwithResultNumber:(NSInteger)resultNumber{
@@ -220,20 +220,26 @@
 
 -(void)assessProgress {
     if (_numberWrong == 5) {
-        self.view.backgroundColor = [UIColor redColor];
+        
         [_gameTimer invalidate];
         
     }
-    if (_numberRight == 1) {
+    if (_numberRight == 5) {
         
-  
-    //  [self goToSpeedRound];
-      [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
-        
-        //[self setTitleLabelwithLevel:_level];
+        NSInteger pathNumber = arc4random() % 2;
+        if (pathNumber == 0) {
+            [self goToSpeedRound];
+            
+        }
+            else {
+                [self goToBonusRound];
+                
+            }
+    
         _numberWrong = 0;
         _numberRight = 0;
         _startTime = 60;
+}
         
         if (_lowEnd>0.1) {
             _lowEnd = _lowEnd - 0.1;}
@@ -246,19 +252,22 @@
         else {
             _highEnd = .1;
             }
-        }
-    
     
     [self loadData];
-    
-        
     
 }
 
 -(void)goToSpeedRound{
     
-        [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
+#warning add transition animation here
+    [self performSegueWithIdentifier:@"seguePlayToSpeed" sender:self];
   
+}
+
+-(void)goToBonusRound {
+#warning add transition animation here
+    [self performSegueWithIdentifier:@"seguePlayToBonus" sender:self];
+    
 }
 
 -(void)timerCountDown {

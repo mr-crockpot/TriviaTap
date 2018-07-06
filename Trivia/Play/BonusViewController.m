@@ -41,7 +41,6 @@
 -(void)loadQuestions {
     NSString *queryQuestion = @"SELECT * FROM questions ORDER BY RANDOM() LIMIT 4";
     _arrQuestions = [[NSMutableArray alloc] initWithArray:[_dbManager loadDataFromDB:queryQuestion]];
-    NSLog(@"The question array is %@",_arrQuestions);
     
     for (Buttons * buttons in _outletCollectionMyButtons) {
         [(Buttons*)buttons formatButtonWithString:_arrQuestions[buttons.tag][0]];
@@ -62,7 +61,7 @@
    //question = _arrQuestions[0][0];
     NSString *queryAnswer = [NSString stringWithFormat:@"SELECT * FROM data WHERE Category = '%@' ORDER BY RANDOM() LIMIT 2",question];
     _arrAnswers = [[NSMutableArray alloc] initWithArray:[_dbManager loadDataFromDB:queryAnswer]];
-    NSLog(@"The answer array is %@",_arrAnswers);
+   
     [self performSegueWithIdentifier:@"segueBonusToBonusAnswer" sender:self];
 }
 

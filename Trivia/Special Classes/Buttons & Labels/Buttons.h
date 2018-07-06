@@ -15,5 +15,7 @@
 
 -(void)formatButtonWithString: (NSString *)incomeString;
 
+-(void)buttonPressAnimation;
+
 
 @end
