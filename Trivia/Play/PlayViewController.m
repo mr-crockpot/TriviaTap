@@ -59,7 +59,7 @@
         lights.backgroundColor = [UIColor grayColor];
         lights.layer.cornerRadius = width/2;
         lights.layer.masksToBounds = YES;
-        NSLog(@"Lights called");
+       // NSLog(@"Lights called");
     }
     
  
@@ -222,12 +222,13 @@
         [self performSegueWithIdentifier:@"seguePlayToGameOver" sender:self];
         
     }
-    if (_numberRight == 5) {
+    if (_numberRight == 1 /*change back to 5*/) {
         
         NSInteger pathNumber = arc4random_uniform(2);
         if (pathNumber == 0) {
-            [self goToSpeedRound];
-            
+            //[self goToSpeedRound];
+            [self goToBonusRound];
+            // undo this
         }
             else {
                 [self goToBonusRound];
