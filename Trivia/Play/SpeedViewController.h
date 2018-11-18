@@ -34,7 +34,7 @@
 @property (strong, nonatomic) IBOutlet Labels *lblQuestion;
 
 @property NSInteger incomingLevel;
-
+@property NSInteger time;
 @property NSInteger points;
 @property (strong, nonatomic) IBOutlet Labels *lblTimer;
 

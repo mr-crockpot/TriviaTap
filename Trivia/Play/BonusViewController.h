@@ -35,7 +35,7 @@
 
 @property (strong, nonatomic) IBOutlet Labels *lblPoints;
 
-
+@property NSInteger time;
 @property NSInteger points;
 @property NSInteger bet;
 @end

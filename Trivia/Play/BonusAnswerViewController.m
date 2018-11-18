@@ -21,8 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- //   _arrAnswers = [[NSMutableArray alloc] init];
-   
+ 
+    _lblTimer.text = [NSString stringWithFormat:@"%li",_time];
+    
     [self loadData];
     // Do any additional setup after loading the view.
 }

@@ -26,6 +26,7 @@
 @property (strong, nonatomic) IBOutlet Labels *lblPoints;
 
 @property (strong, nonatomic) NSMutableArray* arrAnswers;
+@property NSInteger time;
 
 
 @end

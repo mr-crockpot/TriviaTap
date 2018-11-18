@@ -175,6 +175,7 @@
         bonusAnswerViewController.bet = _bet;
         bonusAnswerViewController.points = _points;
         bonusAnswerViewController.question = _question;
+        bonusAnswerViewController.time = _time;
         
         
     }

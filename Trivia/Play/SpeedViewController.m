@@ -26,6 +26,8 @@
     _lblQuestion.text = @"Bonus Round: 50 points each";
     [_lblQuestion formatQuestionLabels];
     
+    
+    
     for (Buttons *btnQuestion in _outletCollectionbtnAnswers) {
         [btnQuestion setTitle:@"" forState:UIControlStateNormal];
         }
@@ -57,7 +59,7 @@
     }
     //FORMAT BUTTONS
     
-    _lblTimer.text = @"60";
+    _lblTimer.text = [NSString stringWithFormat:@"%li",_time];
     _lblPoints.text = [NSString stringWithFormat:@"%li",_points];
     
     

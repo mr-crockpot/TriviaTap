@@ -27,7 +27,7 @@
         _points = 0;
     }
     _lblPoints.text = [NSString stringWithFormat:@"%li",_points];
-    _startTime = 60;
+    _startTime = 120;
     _gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerCountDown) userInfo:nil repeats:YES];
     _highEnd = .8;
     _lowEnd = .2f;
@@ -58,26 +58,7 @@
         NSLog(@"Lights called");
     }
     
-    //FORMAT ANSWER BUTTONS
-    
-/*    for (UIButton *btnAnswers in _outletCollectionBtnAnswers) {
-        [btnAnswers setBackgroundColor:[UIColor whiteColor]];
-        btnAnswers.layer.borderColor = [[UIColor blackColor] CGColor];
-        btnAnswers.layer.borderWidth = 3;
-        btnAnswers.titleLabel.numberOfLines = 0;
-        if (btnAnswers.tag == 0) {
-            btnAnswers.backgroundColor = [UIColor yellowColor];
-            
-        }
-        else {
-            btnAnswers.backgroundColor = [UIColor cyanColor];
-        }
-        
-        
-        
-        
-    }
-   */
+ 
     //FORMAT POINTS LABEL
     
     [_lblPoints formatPointsLabels];
@@ -180,7 +161,7 @@
     
     [self displayResultwithResultNumber:resultNumber];
 
-    [self performSelector:@selector(assessProgress) withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(assessProgress) withObject:nil afterDelay:0.5];
 }
   
 }
@@ -222,6 +203,7 @@
     if (_numberWrong == 5) {
         
         [_gameTimer invalidate];
+        NSLog(@"Game Over");
         
     }
     if (_numberRight == 5) {
@@ -312,6 +294,7 @@
         SpeedViewController *speedViewController =[segue destinationViewController];
         speedViewController.incomingLevel = _level;
         speedViewController.points = _points;
+        speedViewController.time = _startTime;
     }
     if ([segue.identifier isEqualToString:@"seguePlayToBonus"]) {
         BonusViewController *bonusViewController = [segue destinationViewController];
