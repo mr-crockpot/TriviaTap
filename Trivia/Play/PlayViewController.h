@@ -34,6 +34,8 @@
 @property NSInteger level;
 
 
+@property NSMutableArray *questions;
+
 @property BOOL isCorrect;
 
 @property NSTimer *gameTimer;

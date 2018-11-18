@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58D4FF9521A2176F00B9FB8D /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4FF9421A2176F00B9FB8D /* GameOverViewController.m */; };
+		58D4FF9821A21D4900B9FB8D /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D4FF9721A21D4900B9FB8D /* Question.m */; };
 		E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E332677320CCE4EA00C13ECC /* AppDelegate.m */; };
 		E332677A20CCE4EA00C13ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E332677820CCE4EA00C13ECC /* Main.storyboard */; };
 		E332677C20CCE4EC00C13ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E332677B20CCE4EC00C13ECC /* Assets.xcassets */; };
@@ -82,6 +84,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58D4FF9321A2176F00B9FB8D /* GameOverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		58D4FF9421A2176F00B9FB8D /* GameOverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		58D4FF9621A21D4900B9FB8D /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Question.h; path = "Trivia/Special Classes/Question.h"; sourceTree = SOURCE_ROOT; };
+		58D4FF9721A21D4900B9FB8D /* Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = "Trivia/Special Classes/Question.m"; sourceTree = SOURCE_ROOT; };
 		E332676F20CCE4EA00C13ECC /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332677220CCE4EA00C13ECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E332677320CCE4EA00C13ECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -287,6 +293,8 @@
 		E3E4EA4220CF01C500322B27 /* Play */ = {
 			isa = PBXGroup;
 			children = (
+				58D4FF9321A2176F00B9FB8D /* GameOverViewController.h */,
+				58D4FF9421A2176F00B9FB8D /* GameOverViewController.m */,
 				E3E4EA3F20CF01AD00322B27 /* StartViewController.h */,
 				E3E4EA4020CF01AD00322B27 /* StartViewController.m */,
 				E3E4EA4320CF01E800322B27 /* PlayViewController.h */,
@@ -304,6 +312,8 @@
 		E3E4EA5A20D04A1C00322B27 /* Special Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58D4FF9621A21D4900B9FB8D /* Question.h */,
+				58D4FF9721A21D4900B9FB8D /* Question.m */,
 				E38FB97C20E5A0030011A9D8 /* Segues */,
 				E3659EB320E9794B0043F5CC /* Methods */,
 				E3659EB420E979760043F5CC /* Buttons & Labels */,
@@ -468,12 +478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D4FF9521A2176F00B9FB8D /* GameOverViewController.m in Sources */,
 				E38FB98E20E6CEEA0011A9D8 /* slideRightSegue.m in Sources */,
 				E332678220CCE4EC00C13ECC /* main.m in Sources */,
 				E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */,
 				E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */,
 				E341272520E052E30076BE66 /* Buttons.m in Sources */,
 				E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */,
+				58D4FF9821A21D4900B9FB8D /* Question.m in Sources */,
 				E38FB99120E6F86A0011A9D8 /* BonusViewController.m in Sources */,
 				E3659EBF20EA7F9A0043F5CC /* shrinkSegue.m in Sources */,
 				E38FB98520E5D63C0011A9D8 /* curlUpSegue.m in Sources */,

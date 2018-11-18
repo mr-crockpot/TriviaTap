@@ -9,6 +9,8 @@
 #import "PlayViewController.h"
 #import "SpeedViewController.h"
 #import "BonusViewController.h"
+#import "GameOverViewController.h"
+#import "Question.h"
 
 @interface PlayViewController ()
 
@@ -23,6 +25,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
    
     _dbManager = [[DBManager alloc] initWithDatabaseFilename:@"trivia.db"];
+    
+    _questions = [[NSMutableArray alloc] init];
     if (!_points) {
         _points = 0;
     }
@@ -157,6 +161,17 @@
        
         resultNumber = 0;
     }
+    
+    Question *q = [[Question alloc] init];
+    q.question = _lblQuestion.text;
+    q.answers = @[_btnAnswer1.titleLabel.text, _btnAnswer2.titleLabel.text];
+    q.selectedAnswer = (int)sender.tag;
+    if(_isCorrect)
+        q.correctAnswer = (int)sender.tag;
+    else
+        q.correctAnswer = (int)otherTag;
+    [_questions addObject:q];
+    
     if (_startTime>0) {
     
     [self displayResultwithResultNumber:resultNumber];
@@ -204,11 +219,12 @@
         
         [_gameTimer invalidate];
         NSLog(@"Game Over");
+        [self performSegueWithIdentifier:@"seguePlayToGameOver" sender:self];
         
     }
     if (_numberRight == 5) {
         
-        NSInteger pathNumber = arc4random() % 2;
+        NSInteger pathNumber = arc4random_uniform(2);
         if (pathNumber == 0) {
             [self goToSpeedRound];
             
@@ -299,6 +315,13 @@
     if ([segue.identifier isEqualToString:@"seguePlayToBonus"]) {
         BonusViewController *bonusViewController = [segue destinationViewController];
         bonusViewController.points = _points;
+    }
+    
+    if ([segue.identifier isEqualToString:@"seguePlayToGameOver"]) {
+        GameOverViewController  *gameOver = [segue destinationViewController];
+        gameOver.points = _points;
+        gameOver.questions = _questions;
+        
     }
     
     
