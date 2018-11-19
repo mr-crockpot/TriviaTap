@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Buttons.h"
 #import "Labels.h"
+#import "AnnouncementLabel.h"
 
 @interface BonusAnswerViewController : UIViewController
 @property (strong, nonatomic) IBOutletCollection(Buttons) NSArray *outletCollectionBtnAnswers;
@@ -28,5 +29,6 @@
 @property (strong, nonatomic) NSMutableArray* arrAnswers;
 @property NSInteger time;
 
+@property AnnouncementLabel *announcementLabel;
 
 @end

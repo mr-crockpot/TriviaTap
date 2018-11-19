@@ -28,6 +28,7 @@
 		E3659EBA20E97AA80043F5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
 		E3659EBB20E97AA80043F5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E332678120CCE4EC00C13ECC /* main.m */; };
 		E3659EBF20EA7F9A0043F5CC /* shrinkSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E3659EBE20EA7F9A0043F5CC /* shrinkSegue.m */; };
+		E36771BD21A25513002CA2AA /* AnnouncementLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E36771BC21A25513002CA2AA /* AnnouncementLabel.m */; };
 		E38FB97520E08A1B0011A9D8 /* Labels.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97420E08A1B0011A9D8 /* Labels.m */; };
 		E38FB97F20E5D57C0011A9D8 /* flipLeftSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB97E20E5D57C0011A9D8 /* flipLeftSegue.m */; };
 		E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E38FB98120E5D5C10011A9D8 /* flipRightSegue.m */; };
@@ -110,6 +111,8 @@
 		E3659EB820E97A300043F5CC /* metalRidges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metalRidges.jpg; sourceTree = "<group>"; };
 		E3659EBD20EA7F9A0043F5CC /* shrinkSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shrinkSegue.h; sourceTree = "<group>"; };
 		E3659EBE20EA7F9A0043F5CC /* shrinkSegue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shrinkSegue.m; sourceTree = "<group>"; };
+		E36771BB21A25513002CA2AA /* AnnouncementLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnouncementLabel.h; sourceTree = "<group>"; };
+		E36771BC21A25513002CA2AA /* AnnouncementLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnouncementLabel.m; sourceTree = "<group>"; };
 		E38FB97320E08A1B0011A9D8 /* Labels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Labels.h; sourceTree = "<group>"; };
 		E38FB97420E08A1B0011A9D8 /* Labels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Labels.m; sourceTree = "<group>"; };
 		E38FB97D20E5D57C0011A9D8 /* flipLeftSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flipLeftSegue.h; sourceTree = "<group>"; };
@@ -241,6 +244,8 @@
 				E341272420E052E30076BE66 /* Buttons.m */,
 				E38FB97320E08A1B0011A9D8 /* Labels.h */,
 				E38FB97420E08A1B0011A9D8 /* Labels.m */,
+				E36771BB21A25513002CA2AA /* AnnouncementLabel.h */,
+				E36771BC21A25513002CA2AA /* AnnouncementLabel.m */,
 			);
 			path = "Buttons & Labels";
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				E332678220CCE4EC00C13ECC /* main.m in Sources */,
 				E3E4EA4120CF01AD00322B27 /* StartViewController.m in Sources */,
 				E332677420CCE4EA00C13ECC /* AppDelegate.m in Sources */,
+				E36771BD21A25513002CA2AA /* AnnouncementLabel.m in Sources */,
 				E341272520E052E30076BE66 /* Buttons.m in Sources */,
 				E38FB98220E5D5C10011A9D8 /* flipRightSegue.m in Sources */,
 				58D4FF9821A21D4900B9FB8D /* Question.m in Sources */,

@@ -9,6 +9,7 @@
 #import "BonusAnswerViewController.h"
 #import "PlayViewController.h"
 
+
 @interface BonusAnswerViewController ()
 
 @end
@@ -76,30 +77,37 @@
 }
 
 -(void)sendRightWrongMessage:(BOOL)correctAnswer {
+    NSString *message;
+    float width = self.view.frame.size.width;
+    float height = self.view.frame.size.height;
+    UIColor *background;
     if (correctAnswer == 0){
-        NSLog(@"Execute wrong graphic");
+        message = @"Wrong. You lose XX Points";
+        background = [UIColor redColor];
     }
     else {
-        NSLog(@"Execute right graphic");
+       message = @"Right. You earn XX Points";
+       background = [UIColor greenColor];
     }
     
-    UILabel *result = [[UILabel alloc] initWithFrame:CGRectMake(300, 100, 300, 100)];
-    result.text = @"Result";
-    result.backgroundColor = [UIColor greenColor];
-    result.layer.borderColor = [[UIColor redColor] CGColor];
-    result.alpha = 1;
-    [self.view addSubview:result];
+     _announcementLabel = [[AnnouncementLabel alloc] initWithFrame:CGRectMake(0, height*.33, width, height*.33)];
+   
+    [_announcementLabel createAnnouncementLabel:message background:background];
+                          
     
-  /*
-    [UIView animateWithDuration:1 animations:^{
-        result.alpha = 1;
+    _announcementLabel.alpha = 1;
+    [self.view addSubview:_announcementLabel];
+    
+  
+    [UIView animateWithDuration:3 animations:^{
+        self.announcementLabel.alpha = 0;
     } completion:^(BOOL finished) {
-        result.alpha = 0;
-        // [self performSelector:@selector(doSegue) withObject:nil afterDelay:2];
+        //self.announcementLabel.alpha = 1;
+        
     }];
    
-   */
-    [self performSelector:@selector(doSegue) withObject:nil afterDelay:2];
+
+  [self performSelector:@selector(doSegue) withObject:nil afterDelay:3];
 }
 
 -(void)doSegue{

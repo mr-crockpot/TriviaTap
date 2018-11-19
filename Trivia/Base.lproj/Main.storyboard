@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,14 +61,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b66-Fe-ip1" customClass="Buttons">
-                                <rect key="frame" x="19" y="492" width="337.5" height="130"/>
+                                <rect key="frame" x="19" y="492" width="337.5" height="129.5"/>
                                 <state key="normal" title="Answer 2"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="QZs-vS-0e0" eventType="touchUpInside" id="Uha-wA-ZDZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGC-xb-b2h" customClass="Labels">
-                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <rect key="frame" x="0.0" y="621.5" width="375" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,13 +159,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ9-sp-Gnb" customClass="Labels">
-                                <rect key="frame" x="282" y="0.0" width="93" height="44"/>
+                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr0-y8-KYL" customClass="Labels">
-                                <rect key="frame" x="0.0" y="0.0" width="93" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -256,46 +254,46 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfq-Kk-9H8" customClass="Buttons">
-                                <rect key="frame" x="0.0" y="474" width="300" height="66.5"/>
+                                <rect key="frame" x="0.0" y="473.5" width="300" height="67"/>
                                 <state key="normal" title="Button2"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="hFR-nB-mAn" eventType="touchUpInside" id="q43-8x-h3Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-Nh-pIl" customClass="Buttons">
-                                <rect key="frame" x="0.0" y="397.5" width="300" height="66.5"/>
+                                <rect key="frame" x="0.0" y="397" width="300" height="66.5"/>
                                 <state key="normal" title="Button1"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="hFR-nB-mAn" eventType="touchUpInside" id="sGI-d3-9JH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-vB-Fff" customClass="Buttons">
-                                <rect key="frame" x="0.0" y="315.5" width="300" height="67"/>
+                                <rect key="frame" x="0.0" y="315" width="300" height="67"/>
                                 <state key="normal" title="Button0"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="hFR-nB-mAn" eventType="touchUpInside" id="CKk-bh-VAW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3t-P2-p0w" customClass="Labels">
-                                <rect key="frame" x="310" y="315.5" width="65" height="67.5"/>
+                                <rect key="frame" x="310" y="315" width="65" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHV-2B-yCf" customClass="Labels">
-                                <rect key="frame" x="310" y="396.5" width="65" height="67"/>
+                                <rect key="frame" x="310" y="397" width="65" height="66.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoA-Ab-R6f" customClass="Labels">
-                                <rect key="frame" x="310" y="474" width="65" height="67"/>
+                                <rect key="frame" x="310" y="473.5" width="65" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVK-Vd-55a" customClass="Labels">
-                                <rect key="frame" x="310" y="551" width="65" height="66.5"/>
+                                <rect key="frame" x="310" y="550.5" width="65" height="66.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -314,13 +312,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1Q-dx-ycC" customClass="Labels">
-                                <rect key="frame" x="280.5" y="0.0" width="94.5" height="44"/>
+                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onV-hd-caZ" customClass="Labels">
-                                <rect key="frame" x="0.0" y="0.0" width="94.5" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -433,13 +431,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-c1-pvG">
-                                <rect key="frame" x="16" y="20" width="343" height="67"/>
+                                <rect key="frame" x="16" y="20" width="343" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz7-yL-6It">
-                                <rect key="frame" x="16" y="95" width="343" height="39"/>
+                                <rect key="frame" x="16" y="94" width="343" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="0VQ-Zg-HBn"/>
                                 </constraints>
@@ -448,14 +446,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wpo-fs-aZS">
-                                <rect key="frame" x="16" y="189" width="343" height="458"/>
+                                <rect key="frame" x="16" y="188" width="343" height="459"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="k5n-gc-xKm" id="k8K-Jt-M0y"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYp-YB-6RG">
-                                <rect key="frame" x="16" y="142" width="343" height="39"/>
+                                <rect key="frame" x="16" y="141" width="343" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="ftw-R9-YTz"/>
                                 </constraints>
@@ -518,13 +516,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-BT-DQ0">
-                                <rect key="frame" x="282" y="20" width="93" height="44"/>
+                                <rect key="frame" x="281.5" y="20" width="93.5" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdh-Kt-cnv">
-                                <rect key="frame" x="0.0" y="20" width="93" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="94" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -537,21 +535,21 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ff-EN-JIg" customClass="Buttons">
-                                <rect key="frame" x="0.0" y="368.5" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="368" width="375" height="65"/>
                                 <state key="normal" title="Button0"/>
                                 <connections>
                                     <action selector="btnQuestionsPressed:" destination="7gq-4L-4Ha" eventType="touchUpInside" id="tgv-4H-gtD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V47-Hz-A6L" customClass="Buttons">
-                                <rect key="frame" x="0.0" y="443.5" width="375" height="64.5"/>
+                                <rect key="frame" x="0.0" y="443" width="375" height="64.5"/>
                                 <state key="normal" title="Button1"/>
                                 <connections>
                                     <action selector="btnQuestionsPressed:" destination="7gq-4L-4Ha" eventType="touchUpInside" id="d7c-6Z-7XH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfD-ty-Vam" customClass="Buttons">
-                                <rect key="frame" x="0.0" y="518" width="375" height="64.5"/>
+                                <rect key="frame" x="0.0" y="517.5" width="375" height="65"/>
                                 <state key="normal" title="Button2"/>
                                 <connections>
                                     <action selector="btnQuestionsPressed:" destination="7gq-4L-4Ha" eventType="touchUpInside" id="JxY-4n-nqt"/>
@@ -640,7 +638,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuP-Fw-WWt" customClass="Buttons">
-                                <rect key="frame" x="19" y="480" width="337.5" height="130"/>
+                                <rect key="frame" x="19" y="480" width="337.5" height="129.5"/>
                                 <state key="normal" title="Button1"/>
                                 <connections>
                                     <action selector="btnAnswerPressed:" destination="1s1-TJ-l24" eventType="touchUpInside" id="zsV-3O-fXn"/>
@@ -656,13 +654,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBt-Eq-9iR" customClass="Labels">
-                                <rect key="frame" x="282" y="0.0" width="93" height="44"/>
+                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-22-vEA" customClass="Labels">
-                                <rect key="frame" x="0.0" y="0.0" width="93" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -718,6 +716,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LS2-oo-BqB"/>
+        <segue reference="lBr-UV-jdn"/>
     </inferredMetricsTieBreakers>
 </document>
